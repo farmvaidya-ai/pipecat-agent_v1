@@ -92,10 +92,18 @@ async def run_bot(transport: BaseTransport, runner_args: RunnerArguments):
     tts_provider = os.getenv("TTS_PROVIDER", "elevenlabs").lower()
     
     if tts_provider == "murf":
+        # Create aiohttp session for streaming
+        import aiohttp
+        session = aiohttp.ClientSession()
+        
         tts = MurfTTSService(
             api_key=os.getenv("MURF_API_KEY"),
-            voice_id="en-US-ken",  # Murf voice
-            sample_rate=16000
+            voice_id=os.getenv("MURF_VOICE_ID", "Aarav"),  # Telugu voice
+            style=os.getenv("MURF_STYLE", "Conversational"),
+            model=os.getenv("MURF_MODEL", "FALCON"),  # Ultra-low latency
+            region=os.getenv("MURF_REGION", "in"),  # India region
+            sample_rate=16000,
+            aiohttp_session=session
         )
     elif tts_provider == "elevenlabs":
         tts = ElevenLabsTTSService(

@@ -1,12 +1,15 @@
-"""
-Custom Murf TTS Service for Pipecat
-Integrates Murf AI TTS API with Pipecat framework
-"""
+from pydub import AudioSegment
+import pydub.utils
+
+# Set ffmpeg and ffprobe paths
+pydub.utils.ffmpeg_path = "/usr/bin/ffmpeg"
+pydub.utils.ffprobe_path = "/usr/bin/ffprobe"
+import io
 
 import aiohttp
 import asyncio
 from typing import AsyncGenerator
-from pipecat.frames.frames import Frame, AudioRawFrame, ErrorFrame
+from pipecat.frames.frames import Frame, TTSAudioRawFrame, TTSStartedFrame, TTSStoppedFrame, ErrorFrame
 from pipecat.services.ai_services import TTSService
 from loguru import logger
 
@@ -18,7 +21,7 @@ class MurfTTSService(TTSService):
         self,
         *,
         api_key: str,
-        voice_id: str = "en-US-ken",
+        voice_id: str = "te-IN-priya",
         sample_rate: int = 16000,
         **kwargs
     ):
@@ -31,11 +34,15 @@ class MurfTTSService(TTSService):
     async def run_tts(self, text: str) -> AsyncGenerator[Frame, None]:
         """Generate speech from text using Murf API"""
         
+        yield TTSStartedFrame()
+        
         logger.debug(f"MurfTTSService: Generating TTS [{text}]")
+        
+        yield TTSStartedFrame()
         
         try:
             headers = {
-                "Authorization": f"Bearer {self._api_key}",
+                "api-key": self._api_key,  # Changed from Authorization: Bearer
                 "Content-Type": "application/json"
             }
             
@@ -62,19 +69,26 @@ class MurfTTSService(TTSService):
                         return
                     
                     # Get audio data
-                    audio_data = await response.read()
+                    data = await response.json()
+                    audio_url = data["audioFile"]
                     
-                    # Skip WAV header (first 44 bytes for standard WAV)
-                    audio_bytes = audio_data[44:] if len(audio_data) > 44 else audio_data
+                    async with session.get(audio_url) as audio_response:
+                        audio_data = await audio_response.read()
                     
-                    # Yield audio frame
-                    yield AudioRawFrame(
+                    # Resample audio to 16000 Hz for compatibility
+                    audio_segment = AudioSegment.from_wav(io.BytesIO(audio_data))
+                    audio_segment = audio_segment.set_frame_rate(16000)
+                    resampled_wav = audio_segment.export(format="wav").read()
+                    audio_bytes = resampled_wav[44:] if len(resampled_wav) > 44 else resampled_wav
+                    yield TTSAudioRawFrame(  # Changed from AudioRawFrame
                         audio=audio_bytes,
-                        sample_rate=self._sample_rate,
+                        sample_rate=16000,
                         num_channels=1
                     )
                     
                     logger.debug(f"MurfTTSService: Generated {len(audio_bytes)} bytes")
+                    
+                    yield TTSStoppedFrame()
                     
         except asyncio.TimeoutError:
             logger.error("MurfTTSService: Request timeout")

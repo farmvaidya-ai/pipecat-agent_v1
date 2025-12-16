@@ -6,7 +6,8 @@ requires-python = ">=3.10"
 dependencies = [
     "pipecat-ai[webrtc,daily,silero,soniox,deepgram,sarvam,openai,cartesia,elevenlabs,local-smart-turn-v3,runner]",
     "pipecat-ai-cli",
-    "pypdf2>=3.0.0"
+    "pypdf2>=3.0.0",
+    "pydub>=0.25.1",
 ]
 
 [dependency-groups]
