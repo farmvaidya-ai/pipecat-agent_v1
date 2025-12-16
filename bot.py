@@ -10,9 +10,9 @@ The example runs a simple voice AI bot that you can connect to using your
 browser and speak with it. You can also deploy this bot to Pipecat Cloud.
 
 Required AI services:
-- Deepgram (Speech-to-Text)
-- OpenAI (LLM)
-- Cartesia (Text-to-Speech)
+- Soniox (Speech-to-Text)/savram/deepagram
+- OpenAI (LLM)/
+- Cartesia (Text-to-Speech)/sarvam/
 
 Run the bot using::
 
@@ -20,6 +20,7 @@ Run the bot using::
 """
 
 import os
+import PyPDF2
 
 from dotenv import load_dotenv
 from loguru import logger
@@ -49,7 +50,12 @@ from pipecat.processors.frameworks.rtvi import RTVIConfig, RTVIObserver, RTVIPro
 from pipecat.runner.types import RunnerArguments
 from pipecat.runner.utils import create_transport
 from pipecat.services.cartesia.tts import CartesiaTTSService
+from pipecat.services.elevenlabs.tts import ElevenLabsTTSService
+from murf_tts_service import MurfTTSService  # Custom Murf integration
+from pipecat.services.soniox.stt import SonioxSTTService
 from pipecat.services.deepgram.stt import DeepgramSTTService
+from pipecat.services.sarvam.stt import SarvamSTTService
+from pipecat.services.sarvam.tts import SarvamTTSService
 from pipecat.services.openai.llm import OpenAILLMService
 from pipecat.transports.base_transport import BaseTransport, TransportParams
 from pipecat.transports.daily.transport import DailyParams
@@ -62,19 +68,86 @@ load_dotenv(override=True)
 async def run_bot(transport: BaseTransport, runner_args: RunnerArguments):
     logger.info(f"Starting bot")
 
-    stt = DeepgramSTTService(api_key=os.getenv("DEEPGRAM_API_KEY"))
+    # STT Options: soniox, deepgram, sarvam
+    stt_provider = os.getenv("STT_PROVIDER", "soniox").lower()
+    
+    if stt_provider == "soniox":
+        stt = SonioxSTTService(
+            api_key=os.getenv("SONIOX_API_KEY"),
+            model=os.getenv("SONIOX_MODEL", "stt-rt-v3")
+        )
+    elif stt_provider == "deepgram":
+        stt = DeepgramSTTService(
+            api_key=os.getenv("DEEPGRAM_API_KEY")
+        )
+    elif stt_provider == "sarvam":
+        stt = SarvamSTTService(
+            api_key=os.getenv("SARVAM_API_KEY"),
+            language_code="te-IN"  # Telugu
+        )
+    else:
+        raise ValueError(f"Unknown STT provider: {stt_provider}")
 
-    tts = CartesiaTTSService(
-        api_key=os.getenv("CARTESIA_API_KEY"),
-        voice_id="71a7ad14-091c-4e8e-a314-022ece01c121",  # British Reading Lady
-    )
+    # TTS Options: murf, elevenlabs, cartesia, sarvam
+    tts_provider = os.getenv("TTS_PROVIDER", "elevenlabs").lower()
+    
+    if tts_provider == "murf":
+        tts = MurfTTSService(
+            api_key=os.getenv("MURF_API_KEY"),
+            voice_id="en-US-ken",  # Murf voice
+            sample_rate=16000
+        )
+    elif tts_provider == "elevenlabs":
+        tts = ElevenLabsTTSService(
+            api_key=os.getenv("ELEVEN_LABS_API_KEY"),
+            voice_id="pNInz6obpgDQGcFmaJgB",  # Adam - natural voice
+            model="eleven_turbo_v2_5"  # Ultra-low latency
+        )
+    elif tts_provider == "cartesia":
+        tts = CartesiaTTSService(
+            api_key=os.getenv("CARTESIA_API_KEY"),
+            voice_id="71a7ad14-091c-4e8e-a314-022ece01c121"  # British Reading Lady
+        )
+    elif tts_provider == "sarvam":
+        tts = SarvamTTSService(
+            api_key=os.getenv("SARVAM_API_KEY"),
+            model="bulbul:v1"  # Sarvam TTS model
+        )
+    else:
+        raise ValueError(f"Unknown TTS provider: {tts_provider}")
 
     llm = OpenAILLMService(api_key=os.getenv("OPENAI_API_KEY"))
+
+    # Load knowledge base from PDF/text file
+    knowledge_base = ""
+    knowledge_file = os.getenv("KNOWLEDGE_FILE", "resource_document.txt")
+    
+    if os.path.exists(knowledge_file):
+        with open(knowledge_file, 'r', encoding='utf-8') as f:
+            knowledge_base = f.read()
+        logger.info(f"✅ Loaded knowledge base: {len(knowledge_base)} characters")
+    else:
+        logger.warning(f"⚠️  Knowledge file not found: {knowledge_file}")
+
+    # Build system prompt with knowledge base
+    system_prompt = """You are a friendly AI assistant. You must ALWAYS respond in Telugu language only. Never use English or any other language in your responses.
+
+IMPORTANT: Answer questions ONLY based on the following knowledge base document. If the answer is not in the document, politely say you don't have that information in Telugu.
+
+Knowledge Base:
+{knowledge_base}
+
+Instructions:
+- Answer only from the above document
+- Always respond in Telugu
+- Be conversational and helpful
+- If information is not in the document, say so honestly in Telugu
+""".format(knowledge_base=knowledge_base)
 
     messages = [
         {
             "role": "system",
-            "content": "You are a friendly AI assistant. Respond naturally and keep your answers conversational.",
+            "content": system_prompt,
         },
     ]
 
@@ -107,7 +180,7 @@ async def run_bot(transport: BaseTransport, runner_args: RunnerArguments):
 
     @transport.event_handler("on_client_connected")
     async def on_client_connected(transport, client):
-        logger.info(f"Client connected")
+        logger.info(f"Client connected: {client}")
         # Kick off the conversation.
         messages.append({"role": "system", "content": "Say hello and briefly introduce yourself."})
         await task.queue_frames([LLMRunFrame()])

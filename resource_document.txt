@@ -1,0 +1,697 @@
+```Biofactor – Comprehensive Bio-Fertilizer Information November 3, 2025 Contents 1 Introduction 3 
+2 FAQ & Answers on Bio-Fertilizers 3 3 Product Information 4 3.1 Aadhaar Gold & INM Chakra . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . 4 3.1.1 Aadhaar Gold (Carrier Consortium Granular 
+Biofertilizer) . . . . . . . . . 4 3.1.2 INM Chakra . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . 8 3.2 GVAMSPF (Vesicular Arbuscular Mycorrhiza) . . . . . . . . . . . . . . . . 
+. . . 8 3.3 N-Factor & P-Factor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+9 3.3.1 N-Factor – Nitrogen Fixing Bacteria . . . . . . . . . . . . . . . . . . . . . 9 3.3.2 
+P-Factor – Phosphorus Solubilizing Bacteria . . . . . . . . . . . . . . . . . 9 3.4 K-FACTOR . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10 3.5 ZN-FACTOR . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 3.6 Bio Fertilize . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 3.7 BIO TRIPLE ACTION PROGRAM 
+. . . . . . . . . . . . . . . . . . . . . . . . . 12 3.8 BIO DOUBLE ACTION PROGRAM . . . . . . . . 
+. . . . . . . . . . . . . . . . 12 3.9 Biopotash . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . 13 3.10 BIOFACTOR Bio Fertilizer . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . 13 3.10.1 PROCEED – Biotic & Abiotic Stress Relieve . . . . . . . . . . . . 
+. . . . 13 3.10.2 PRITHVI – Controls Sucking Pest . . . . . . . . . . . . . . . . . . . . . . 14 
+3.10.3 PROMOTE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 3.10.4 
+SUMCA – Bio Enriched Organic Manure . . . . . . . . . . . . . . . . . . 14 4 Organic fertilizers : 
+15 4.1 Poshak Level-1 (Liquid Fermented Organic Fertilizer) . . . . . . . . . . . . . . . 16 5 
+Biofactor’s chemical fertilizers: 19 5.0.1 CHELATED ZINC AS ZINC GLYCINE (LIQUID) . . . . . . . . . 
+. . . . 20 5.0.2 CHELATED BORON AS BORON GLYCINE (LIQUID) . . . . . . . . . 21 5.0.3 Ferron . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 5.0.4 MAGNESIUM HYDROXIDE 
+AND ZINC PHOSPHATE . . . . . . . . . 22 5.0.5 TRuMiN – MANGANESE CARBONATE SUSPENSION CONCENTRATE 
+22 5.0.6 COPSE – 24% Copper Sulphate . . . . . . . . . . . . . . . . . . . . . . . 23 5.0.7 
+BSL4Agri – A Novel Product for Viral Diseases . . . . . . . . . . . . . . . 23 5.1 What does that 
+mean? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 5.2 What is the use? . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 1
+
+5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends . . . . . . . . . . . . . . . . 24 5.4 FLOWMIN 
+– Specially Designed for Drip Irrigation . . . . . . . . . . . . . . . . 25 5.4.1 Sampoorna – 
+Specially Designed for Foliar Nutrigation . . . . . . . . . . . 25 6 Agriseal – A Novel Product for 
+Stress Management 26 6.1 BOC – A Novel Product of Liquid Organic Carbon . . . . . . . . . . . . . . 
+. . . 26 6.2 Invictus – A Novel Product for Soil-Borne Diseases . . . . . . . . . . . . . . . . . 
+27 6.3 Invictus (Trichoderma viride 1.5% WP) . . . . . . . . . . . . . . . . . . . . . . . 27 6.4 
+Native Neem – A Novel Botanical Insecticide . . . . . . . . . . . . . . . . . . . . 30 6.5 TRAICORE 
+– Plant Growth Regulator . . . . . . . . . . . . . . . . . . . . . . . 30 6.6 Pentazia – Advanced 
+Biological Fungicide . . . . . . . . . . . . . . . . . . . . . . 31 6.7 NEOLIFE – A Soil Health 
+Revolution . . . . . . . . . . . . . . . . . . . . . . . . 31 6.8 DFUSE – A Natural Solution for 
+Larval Pests . . . . . . . . . . . . . . . . . . . . 31 6.9 DFNDR – A Natural Shield Against 
+Sucking Pests . . . . . . . . . . . . . . . . . 31 2 3. **Update .env if using different file:** 1 
+Introduction Biofactor stands as a leading innovator in the bio-fertilizer industry. We are 
+committed to trans- forming agricultural practices through the application of cutting-edge 
+biotechnologies. Recog- nizing the critical role of healthy soil in sustaining a robust food 
+system, Biofactor empowers farmers with scientifically-driven bio-fertilizer solutions. These 
+solutions enrich soil health, en- hance crop yields, and safeguard the well-being of future 
+generations. A Decade of Groundbreaking Innovation: For over a decade, Biofactor has been at the 
+forefront of agricultural innovation. We dedicate ourselves to understanding the evolving 
+challenges faced by modern farming. Our focus lies in developing bio-fertilizers and organic inputs 
+that address the critical issues of declining soil fertility and the impact of chemical fertilizers 
+on human health. Our meticulous formulations, created using revolutionary technologies, ensure the 
+efficient delivery of essential macro and micronutrients to crops. Pioneering Research and 
+Development: Biofactor maintains a state-of-the-art R&D laboratory, recognized by the Department of 
+Scientific and Industrial Research (DSIR), Government of India. Our team of highly qualified 
+scientists is dedicated to pioneering advancements in bio- fertilizer technology. We hold eight 
+patents and have developed 35 proprietary microbial strains, all meticulously selected for their 
+effectiveness in promoting soil health and crop growth. Global Collaboration, Local Impact: 
+Biofactor fosters a collaborative spirit, working closely with leading agricultural universities 
+and research institutions worldwide. This global perspec- tive allows us to develop solutions 
+tailored to the specific needs of diverse crops and regional agricultural environments. We are 
+proud to be a member of esteemed organizations such as the Fertilizer Association of India (FAI) 
+and the Indian Council of Agricultural Research - Central Institute for Research on Cotton Textiles 
+(ICAR-CIRCOT). These affiliations further strengthen our commitment to supporting the agricultural 
+community. A Legacy of Excellence in Sustainable Solutions: Biofactor has established itself as a 
+leader in the global agricultural sector through continuous innovation and unwavering dedication to 
+sus- tainability. Our groundbreaking MAMSP technology revolutionizes nutrient delivery to plants by 
+converting them into micron-sized particles, enabling optimal nutrient uptake and promoting 
+exceptional growth and yield. Building a Sustainable Future, Together: As Biofac Inputs expands its 
+global reach, we remain resolute in our commitment to promoting sustainable practices in 
+agriculture, poultry, and live- stock industries. We believe in empowering farmers with innovative 
+solutions that enhance soil health, improve crop quality, and ensure the long-term viability of our 
+agricultural ecosystems. Invitation to Collaboration: Biofactor invites you to join us in 
+cultivating a healthier and more sustainable future. Together, let’s leverage the power of 
+bio-technology to nourish the Earth for generations to come. 2 FAQ & Answers on Bio-Fertilizers Q1. 
+What are Bio-Fertilizers?A mixture of micro-organisms that are alive and provide nutrients to crops 
+of agricultural importance. Q2. What is the necessity of using Bio-Fertilizers in Agriculture?Only 
+25–50% of nu- trients (Nitrogen, Phosphorus, Potash, Zinc, Iron) present in chemical fertilizers 
+like Urea, DAP, Super Phosphate, Zinc Sulphate are available to plants. The remaining 50– 75% of 
+nutrients remain in neutral state in the soil. Only these nutrients can be supplied to the plant 
+through Bio-Fertilizers. 3 ```env Q3. What are the benefits of using Bio-Fertilizers?•Assimilates 
+nitrogen from the air and dissolves phosphorus, potash, zinc, iron, and other nutrients in neutral 
+state of soil, providing them to plants. •Reduces use of chemical fertilizers by 20–25% and 
+increases yield by 15–20%. •Micro-organisms release biochemicals near plant roots that are useful 
+for growth. •Protects plant from waterlogging. •Prevents some soil-borne diseases. •Increases the 
+number of good micro-organisms in the soil. Q4. What are nutrients to crops?A vital mixture of 
+micro-organisms that absorb and provide nutrients to crops of agricultural importance. Q5. How to 
+use Bio-Fertilizers?•Solid Bio-Fertilizers:Apply in soil during plough- ing, seedbed preparation, 
+furrow, in the seedling area, around the roots, and along the furrow. •Liquid Bio-Fertilizers:Spray 
+through foliar application, seed dip, or through drip irrigation. Q6. What precautions should be 
+taken while using Bio-Fertilizers?•Store Bio-Fertilizers in cool places (do not expose to 
+sunlight). •Use within 6 months from the manufacturing date. •Avoid mixing with chemical 
+fertilizers and pesticides. •Apply in moist soil for better results. •The moisture content of the 
+soil should be adequate at the time of application. Q7. What are the causes for non-availability of 
+Bio-Fertilizers?•Non-availability of high-quality raw materials and microbial species. •Lack of 
+proper carrier materials. •Lack of proper research facilities to suit local crop needs. •Lack of 
+Bio-Fertilizer manufacturing units with advanced technology. •Non-availability of suitable 
+bio-encapsulation methods for different nutrients. 3 Product Information 3.1 Aadhaar Gold & INM 
+Chakra 3.1.1 Aadhaar Gold (Carrier Consortium Granular Biofertilizer) Expanded Product Intelligence 
+(Merged) CompanyBiofac Inputs Private Limited ProductAadhaar Gold CategoryCarrier Consortium 
+Biofertilizer (Granular) Product Code / SKU31010099 Pack Sizes4 kg/acre 4 
+KNOWLEDGE_FILE=my_custom_knowledge.txt Product TypeGranular Biofertilizer Consortium 
+OverviewAadhaar Gold is a granular-based biofertilizer consortium designed to enhance soil 
+fertility and crop productivity throughBio-Encapsulation Technology. It combines nitrogen-fixing, 
+phosphate-solubilizing, and potassium-mobilizing microorganisms in a single product. The advanced 
+encapsulation ensures long microbial shelf life, gradual release, and compatibility with chemical 
+fertilizers. It improves soil health, root strength, and tolerance to abiotic stress while 
+supporting sustainable crop nutrition. Key Composition (Label Specs) •Azotobacter:≥1×107CFU/g 
+•Phosphate Solubilizing Bacteria (PSB):≥1×107CFU/g •Potassium Mobilizing Bacteria (KMB):≥1×107CFU/g 
+•Total Viable Count:≥3×107CFU/g of carrier Mechanism of Action •Fixes atmospheric nitrogen and 
+converts soil-bound phosphorus and potassium into plant- available forms. •Bio-Encapsulation 
+improves microbial stability and field performance. •Gradual release ensures sustained nutrient 
+availability. •Strengthens rhizosphere activity and root nutrient uptake. •Protects against abiotic 
+stresses (drought, salinity, temperature). Scientific PrincipleBased on Bio-Encapsulation 
+Technology — encapsulated beneficial mi- crobes remain viable longer, protected by organic coating 
+that withstands field stress. Gradual release enhances microbial activity and nutrient efficiency 
+over time. Unique Selling Proposition (USP) •Triple Action Formula:N-fixing, P-solubilizing, 
+K-mobilizing bacteria. •Bio-Encapsulation Advantage:Longer shelf life, higher survival rate. 
+•Consistent Results:25–30% yield increase over conventional biofertilizers. •Eco-Friendly:Reduces 
+dependency on chemical fertilizers. •Farmer Friendly:Easy 4 kg/acre application; compatible with 
+organic inputs. •Certified:Patented, R&D backed, quality-validated. Crop Mapping & Doses •Paddy 
+(Special):Vegetative stage; 4 kg/acre; with FYM/broadcasting; once per season. •Cotton 
+(Special):Vegetative to flowering; 4 kg/acre; basal/soil application; once per season. 
+•Chilli/Tomato:Vegetative stage; 4 kg/acre; with FYM; once per season. •Sugarcane (Special):Early 
+vegetative; 4–5 kg/acre; furrow/broadcast; once per season. 5 ``` 
+•Groundnut/Pulses/Oilseeds:Vegetative stage; 4 kg/acre; soil application; once per season. Usage 
+Guidelines When to ApplyDuring land preparation or early vegetative stage. How to ApplyMix 4 kg 
+Aadhaar Gold/acre with well-decomposed FYM or compost; apply evenly over moist soil by broadcasting 
+or incorporation. CompatibilityCan be mixed with organic manures or biofertilizers; avoid direct 
+contact with chemical fungicides or concentrated fertilizers. StorageStore in a cool, dry place 
+away from sunlight, moisture, and pesticides. HandlingUse gloves and masks for bulk handling. Shelf 
+Life12 months from date of manufacture under recommended conditions. Market & Competitor 
+Intelligence •Multiplex Bio-NPK Blends:350–500/kg — Aadhaar Gold has better encapsulation and 
+survival. •Local Bio-NPK Consortiums:300–400/kg — Aadhaar Gold ensures consistency, cer- 
+tification, and patented formulation. •Generic Rhizobium/PSB/KMB:200–300/kg — Aadhaar Gold unifies 
+all three micro- bial functions. •Griffin (IPL Biologicals):1600/kg — Aadhaar Gold offers localized 
+formulation at lower cost. Aadhaar Gold Advantage:Triple action, encapsulated microbes, consistent 
+CFU count, field-tested performance, cost-effective. Positioning & Sales Pitch Target 
+Segment:Farmers growing paddy, cotton, sugarcane, chilli, pulses, and oilseeds.Ideal 
+Regions:High-chemical-use areas with declining soil fertility. Dealer Pitch: •Strong market for NPK 
+biofertilizers. •Bio-Encapsulation Technology ensures high shelf stability. •25–30% yield 
+improvement; consistent results. •Cost-effective and repeat orders assured. Farmer Pitch: “Aadhaar 
+Gold gives your crop complete NPK nutrition organically.” “Chemical fertilizers feed plants 
+temporarily—Aadhaar Gold builds soil fertility naturally.” “Within 2–3 weeks, you’ll see stronger 
+roots, greener leaves, and higher yield.” Field Results & Research Validation 
+•Trials:Multi-location demonstrations in AP, Telangana, Maharashtra. •Yield Impact:25–30% increase 
+in cotton and chilli. 6
+
+•Observed Benefits:Stronger roots, higher foliage density, better nutrient uptake. 
+•Certifications:Patented, validated, and certified organic by Biofac. •Farmer Feedback:High 
+satisfaction; visible growth in 2–3 weeks. FAQs UseSupplies essential NPK naturally through 
+beneficial microbes. DifferenceTriple-action formula; encapsulated microbes ensure consistent 
+performance. TimingApply at vegetative or early establishment stage. MixingCompatible with 
+biofertilizers and organic manures; avoid direct chemical mixing. Dosage4 kg/acre; economical vs 
+multi-product alternatives. CertificationCertified organic; residue-free. ResultsVisible in 2–3 
+weeks. Chemical MixingCompatible with fertilizers, not fungicides. Regional Adaptation •AP & 
+Telangana:Paddy, Chilli, Cotton — resolves nutrient depletion, improves soil fertility. 
+•Maharashtra:Cotton, Sugarcane, Soybean — restores microbial balance, reduces urea/DAP dependency. 
+•Karnataka:Paddy, Horticulture — encapsulation ensures survival under water stress. 
+•Gujarat:Groundnut, Cotton — improves root health under saline soils. •Tamil Nadu:Paddy, Vegetables 
+— organic solution for yield sustainability. Knowledge Base References •Product Brochure / Label: 
+Aadhaar Gold (Biofactor) •Demonstration Reports: AP, Telangana, Maharashtra trials •Visuals: Farmer 
+field days, before-after images •Marketing Collaterals: Posters, WhatsApp creatives, dealer kits 
+Keywords for AI / Voice Agent“Triple-action NPK biofertilizer”, “Bio-Encapsulated microbial 
+granules”, “Organic alternative to DAP”, “Soil fertility restoration”, “4 kg per acre 
+biofertilizer”, “Root growth promoter”, “Biofactor Aadhaar Gold”, “Nitrogen fixer phosphate 
+solubilizer potassium mobilizer”. Extra NotesCommon employee mistake: Describing it as a 
+single-strain product. Scientific insight: Bio-Encapsulation ensures prolonged microbial survival 
+and gradual release. Success stories: Farmers in Warangal (cotton) and Guntur (chilli) reported 
+25–30% yield gains, stronger roots, and greener crops. 7
+## 🔧 Customization
+3.1.2 INM Chakra INM-Chakra introduces bacterial consortium encapsulated in liquid form, offering a 
+stable source of nitrogen, phosphorus, and potassium. This consortium comprises a minimum of 
+1.5×107bacteria per millilitre. It is specially formulated in liquid form for easy application in 
+the field. Benefits: •Collects nitrogen from the air, dissolves phosphorus, potash and other 
+nutrients in neutral state and returns them to plants. •Number of good microorganisms 
+increases→soil fertility improves. •Increases yields and quality by 25–30% while reducing 
+investments by 20–25%. Dosage & Application: •Dosage: 5 litres per acre. •Should be given by drip 
+irrigation in the first stage (within 10–15 days after sowing). •For short-term crops: 2 times 
+during crop period. •For long-term crops: 2 or 3 times a year. •Five days before and after chemical 
+fertilizers, avoid giving through drip irrigation. 3.2 GVAMSPF (Vesicular Arbuscular Mycorrhiza) 
+GVAM, employing its cutting-edge Bio-encapsulation technology, presents solid granules and liquid 
+formulations of mycorrhiza – a pivotal microorganism adept at efficiently retrieving es- sential 
+nutrients, particularly phosphorus, for plant roots. These granules and liquid variants act as a 
+vital conduit for plant sustenance. Within a mere gram or millilitre, a minimum of 10 mycorrhizal 
+spores is encapsulated. Highly effective Bio-encapsulation (patented technology) ensures the 
+availability of these Mycorrhiza variants in both granular and liquid states. Benefits: 
+•Significantly improves absorption of phosphorus from the soil through its intricate root network, 
+fostering plant growth even in soils with diminished phosphorus levels. •Augments the population, 
+contributing to enhanced nutrient uptake and overall plant vi- tality. •Acts as a shield, 
+safeguarding plants from soil-borne diseases and resulting in healthier crops. Dosage & 
+Application: •Dosage: 10 kg per acre for granular form, 5 litres per acre for liquid form. 
+•Granular Form: Apply granules directly to the soil during final ploughing or when sowing seeds. 
+•Liquid Form: Administer during the initial phase – either at planting or shortly thereafter. 8
+### Change System Prompt
+Application Frequency: •For short-duration crops: A single application during the cropping season 
+is sufficient. •For long-duration crops: Apply 1 to 2 times annually. Caution: •For granular form: 
+Ensure thorough mixing during seedbed preparation. •For liquid form: Apply directly to roots during 
+planting or shortly afterwards. 3.3 N-Factor & P-Factor 3.3.1 N-Factor – Nitrogen Fixing Bacteria 
+N-Factor refers to free-living or endophytic bacteria that play a key role in stabilizing nitrogen 
+in the environment. In one millilitre of liquid, a minimum of 1x10 bacteria is present. These 
+bacteria, through release of various enzymes into the environment, convert atmospheric nitrogen (N) 
+into immediately absorbable forms such as ammonia (NH) or nitrate (NO) for plants. Benefits: 
+•Stabilizes 20 to 40 kg of nitrogen per hectare, significantly enhancing nitrogen availability. 
+•Reduces need for chemical fertilizers by 25-30%. •Stimulates release of auxins, gibberellic acid, 
+and cytokinins, fostering plant growth. •Improves moisture absorption capacity of plants from soil, 
+resulting in 10-15% increase in crop yield in rain-fed areas. Dosage & Application: •Dosage: 1 
+litre per acre. •Initially, apply through seed treatment using seed-dip method, followed by foliar 
+spray during subsequent stages. •In case of weather changes, apply 1 litre per acre as foliar 
+spray. Application Frequency: •For short-duration crops: Single application per crop cycle. •For 
+mid-duration crops: Apply twice. •For long-duration crops: Apply 2 to 3 times per crop cycle. 3.3.2 
+P-Factor – Phosphorus Solubilizing Bacteria The P-Factor represents liquid living fertilizer, a 
+potent blend of free-living and endophytic bacteria designed to unlock the power of phosphorus in 
+neutral soil conditions. With a con- centration of at least 1x10 bacteria per millilitre, this 
+solution harnesses the natural ability of bacteria to solubilize phosphorus. Once applied, these 
+bacteria seamlessly integrate into the soil, releasing enzymes that dissolve inaccessible 
+phosphorus and transform it into a readily available form for plants. 9 Edit the system prompt in 
+`bot.py` (around line 115): Benefits: •Provides a substantial yield of 25–30 kg of phosphorus per 
+hectare, reducing reliance on chemical fertilizers by 20–25%. •Stimulates secretion of specific 
+hormones and bio-chemicals in the root region, fostering plant growth. •Results in a significant 
+boost in crop yield (15–20%), contributing to sustainable and efficient agricultural practices. 
+Dosage & Application: •Dosage: 1 litre per acre. •Initiate via drip irrigation initially, followed 
+by strategic spraying during subsequent stages. •Apply during sowing or spraying for continuous 
+release in crop root zone. Application Frequency: •For short-duration crops: Single application per 
+crop cycle. •For mid-duration crops: Apply twice. •For long-duration crops: Apply 2 to 3 times per 
+crop cycle. 3.4 K-FACTOR K-factor refers to free-living or endophytic bacteria in the rhizosphere, 
+which are responsible for mobilizing potassium in the soil. In one millilitre of fluid, there are 
+at least 1x10 bacteria. These bacteria, after entering the soil, release a variety of organic acids 
+and enzymes into the root zone. As a result, they facilitate the assimilation of potassium, making 
+it more available to plants. Advantages: •Improves potassium availability to plants from early 
+stages, promotes strong root develop- ment, stem and tuber formation. In addition, it contributes 
+to increase the arrangement of flowers and fruits. •Reduces the need for chemical potassium 
+fertilizers by 20-25%. •Exhibits antagonistic properties against various plant pathogens, 
+contributes better disease resistance, improves plant vigor and yield. Dosage & Application: 
+•Dosage: 1 liter per acre. •Initially, apply by seed treatment using seedling dipping method, 
+followed by foliar spray during growth stages. Application Frequency: •For short-duration crops, a 
+single application per crop cycle is recommended. •For mid-season crops, apply twice. 10
+
+3.5 ZN-FACTOR ZN-FACTOR represents free-living or endophytic bacteria within the rhizosphere that 
+actively participate in the solubilization of zinc in the soil. In one millilitre of liquid, a 
+minimum of 1x10 bacteria can be identified. When introduced into the soil, these bacteria release 
+various organic acids and enzymes into the root zone, facilitating the solubilization of zinc and 
+enhancing its availability to plants. Benefits: •Enhances zinc accessibility to plants from the 
+early growth stages, promoting robust root development and improving stem and tuber formation. It 
+also contributes to increased flower and fruit setting. •Reduces dependence on chemical zinc 
+fertilizers by 20-25%. •Exhibits antagonistic properties against various plant pathogens, thereby 
+enhancing overall disease resistance. •Significantly contributes to the total zinc nutrient pool, 
+thereby improving plant vigour and yield. Dosage & Application: •Dosage: 1 litre per acre. 
+•Initially, apply through seed treatment using a seedling dip method, followed by foliar spray 
+during subsequent growth stages. •In case of changes in weather conditions, apply 1 litre per acre 
+through foliar spray. Application Frequency: •For short-duration crops, a single application during 
+the crop cycle is recommended. •For mid-duration crops, apply twice. •For long-duration crops, 
+apply 2 to 3 times per crop cycle. 3.6 Bio Fertilize Biofactor Bio Fertilizer •Green Bag (NUTRI4) 
+–Schedule: 3 (Bio Fertilizers) –Carrier: consortium –Crops: All crops –Dosage: 50 kg/acre •Blue Bag 
+(NPK) –Schedule: 3 (Bio Fertilizers) –Carrier: consortium –Crops: All crops –Dosage: 50 kg/acre 11 
+```python •Red Bag (Potash) –Schedule: 3 (Bio Fertilizers) –Carrier: Potassium solubilizing 
+bacteria –Crops: All crops –Dosage: 50 kg/acre Application Instructions: •Apply the granules 
+directly to the soil during final tillage or when sowing seeds. •Short duration crops: One 
+application during the crop rotation is recommended. •Mid-season crops: Apply twice. •Long-duration 
+crops: Apply 2 to 3 times per crop cycle. Comment: •Uniqueness: It is prepared by bio-encapsulation 
+process so it can be used in combination with other chemical fertilizers. 3.7 BIO TRIPLE ACTION 
+PROGRAM A community of new and locally adapted bacteria that provide nitrogen, phosphorus, and 
+potash. •Form: Pellets •One gram of pellets contains at least 3×10ˆ7 bacteria. Functions: •Collects 
+nitrogen from the air. •Dissolves phosphorus, potash, and other natural soil nutrients and returns 
+them to the plant. Benefits: •Increases yields and quality by 25–30%. •Reduces investment by 
+20–25%. 3.8 BIO DOUBLE ACTION PROGRAM A group of bacteria that fix nitrogen from the air and 
+solubilize neutral phosphorus in the soil. •Form: Granules •One gram of granules contains at least 
+2×10ˆ7 bacteria. Functions: •Collects nitrogen from the air and delivers it to crops. •Secretes 
+organic acids and enzymes into the root area to make unavailable phosphorus accessible to crops. 12 
+system_prompt = """You are a friendly AI assistant. You must ALWAYS respond in Telugu language 
+only. Benefits: •Provides 25 kg nitrogen and 25–30 kg phosphorus per acre. •Crop yields increase by 
+15–20%. •Plant health is boosted by 20–25% when combined with chemical fertilizers. 3.9 Biopotash A 
+collection of bacteria specialized in solubilizing potash. •Form: Granules or pellets •One gram 
+contains at least 5×10ˆ7 bacteria. Functions: •Enter the soil and secrete organic acids and enzymes 
+to dissolve unavailable potash. Benefits: •Increases yields and quality by 15–20%. •Plant health is 
+boosted by 20–25% in combination with chemical fertilizers. 3.10 BIOFACTOR Bio Fertilizer 3.10.1 
+PROCEED – Biotic & Abiotic Stress Relieve Description: A liquid bio-fertilizer containing bacterial 
+complex to help plants under abiotic and biotic stress by providing nitrogen, phosphorus, potash, 
+and other nutrients. Bacterial count: 1 ml contains at least 1.5×10ˆ7 bacteria. Special Features: 
+Formulated in liquid form for accurate bacterial count using new bacterial strains that provide 
+nutrients and protect against environmental/biological stresses. Advantages: •Helps in water stress 
+tolerance, increases water uptake capacity, and nutrient availability. •Facilitates salt ion 
+exclusion in saline soils, reducing salinity stress. •Reduces heavy metal toxicity in soil through 
+efficient nutrient uptake. Dosage & Application: •Dosage: 500 ml/acre. •Application: Spray at first 
+stage of crop (within 30 days after sowing) or when waterlogging is a problem. •Frequency: 1 time 
+in first stage; as needed in later stages. 13
+
+3.10.2 PRITHVI – Controls Sucking Pest Description: Liquid bio-fertilizer with bacteria that fight 
+sap-sucking insects and provide essen- tial nutrients. Bacterial count: 1 ml contains at least 
+1.5×10ˆ7 bacteria. Mode of action: Bacteria release biochemicals disrupting insect nervous systems. 
+Advantages: •Enhances availability of nutrients, root growth, and soil health. •Increases ability 
+to fight sap-sucking insects and pests. •Low-cost, eco-friendly, and natural nutrient source. 
+Dosage & Application: •Dosage: 1.5–2 l/acre (7–10 ml per liter of water). •Application: At first 
+stage (within 30 days of sowing), 1 time in first stage; as needed later. 3.10.3 PROMOTE Phosphate 
+Rich Organic Manure Description: Organic fertilizer rich in phosphorus (nano form) with 
+phosphorus-solubilizing bacteria. Contains C 8%, P 8%, N 0.4%, CN ratio 20:1. Function: Provides 
+phosphorus directly to plants and dissolves neutral-state phosphorus in soil. Advantages: •100% 
+plant utilization of phosphorus. •Microorganisms grow through organic matter, increasing nutrient 
+availability and soil health. •Produces healthy crops with high-quality yields at low cost. Dosage 
+& Application: •Dosage: 100 kg/acre •Application: Apply in last furrow/seed or footings during 
+transplanting. •Frequency: 1 time for short-duration crops; 2 times for mid-term crops; 2–3 times 
+per year for perennial crops. 3.10.4 SUMCA – Bio Enriched Organic Manure Description: Organic 
+fertilizer with bacteria providing N, P, K, and Zn. One gram of granules contains 5×10ˆ7 bacteria. 
+Organic carbon 14%; NPK all-inclusive≥3%. Function: Solubilizes nutrients in soil and makes them 
+available to plants. 14 IMPORTANT: Answer questions ONLY based on the following knowledge base 
+document. Advantages: •Can be applied alongside organic fertilizers. •Promotes growth of 
+microorganisms, improving nutrient availability. •Ensures healthy crops, high-quality yields, and 
+reduces investment. Dosage & Application: •Dosage: 100 kg/acre •Application: Apply in last 
+furrow/seed or footings during transplanting. •Frequency: 1 time for short-duration crops; 2 times 
+for mid-term crops; 2–3 times per year for perennial crops. 4 Organic fertilizers : All types of 
+nutrients are required by the plant at each growth stage but their dosage varies depending on the 
+growth stage. The Belom series is a combination of organic liquid nutrients (As per growth stage 
+with specific micronutrients) specially formulated to provide major nutrients (Nitrogen, Phosphorus 
+and Potash at least 1.2%) and secondary(Calcium ,Magnesium,Sulphur) and micro nutrients in required 
+doses for the growth stage of the crop. Advantages: •Fermentation of organic fertilizers using new 
+and effective microorganisms which increases nutrient availability. •So plants get nutrients easily 
+(Bioavailability of nutrients). Nutrients use increases it’s efficiency and the plant can fully 
+utilize its genetic potential. Belom S-1: Provides the main nutrients required for the vegetative 
+growth (like nitrogen slightly at high amount, phosphorus and potash at moderate amount if compared 
+in between) and also provides all types of micronutrients required for this stage (Especially for 
+Vegetative growth with specific micronutrients which helps in growing shoots) in appropriate dosage 
+in liquid form which promote strong root system, more branching and healthy foliage growth. Belom 
+S-2: Providing the main nutrients required for the flowering and bud setting stage (like Phosphorus 
+slightly at high amount ,Nitrogen and potash at moderate amount if compared in between) and also 
+provides all types of micronutrients required for this stage (Especially for Flowering stage with 
+specific micronutrients which helps in f lower initiation) in appropriate dosage in liquid form. 
+Promotes healthy flowers (more number of female flowers setting) , more pollination and better bud 
+setting. Belom S-3: Provides the main nutrients required for the fruit development to ripening 
+stage (like Potash slightly at high amount,Nitrogen and Phosphorus at moderate amount if compared 
+in between) and also provides all types of micronutrients required for this stage (Especially 
+during Fruit development to ripening stage with specific micro nutrients which helps during this 
+stage) in appropriate dosage in liquid form. Contributes to more pod formation, no drop of pods, 
+heavier kernels in pods formed,Increases sugar content especially in fruits and automatically gives 
+higher quality All types of nutrients are required by the plant at each growth stage but their 
+dosage varies depending on the growth stage. This nutrient series (As per growth stage with 
+specific macronu- trients) is a mixture of organic liquid nutrients specially formulated to provide 
+secondary and 15
+
+micronutrients and main nutrients in required doses for crop growth. Deficiency symptoms are more 
+pronounced in dark leaves when major nutrients such as nitrogen, phosphorus and potash are 
+deficient Advantages: •Bioavailability of nutrients to plants. •Nutrients use efficiency increases. 
+The plant will yield as much as it is genetically capable of. Nutrient Level-1: Vegetative stage 
+specific macronutrients (Vegetative stage specific macronu- trients) in liquid form, providing all 
+types of major nutrients (nitrogen, phosphorus and potash) required for this stage, providing 
+secondary and micro nutrients. Promotes strong root system, more branches and healthy foliage 
+growth. Nutrient Level-2: At Flowering stage (specific macronutrients in adequate amounts as per 
+plant growth stage in liquid form) providing secondary nutrients(Calcium,Magnesium,Sulphur) and 8 
+micronutrients required for the flow ering stage. Promotes healthy canopy (more female flowers) and 
+more pods. Nutrient Level-3: Provides secondary and micro nutrients required for fruit growth stage 
+and provides all types of major nutrients (Nitrogen, Phosphorus and Potash) required for this stage 
+At Fruiting stage requires specific macro nutrients in appropriate dosage in liquid form. Con- 
+tributes to more pod formation, no drop of pods, heavier kernels in pods formed and higher quality. 
+Nutrient Level-4: At Fruiting & Multiple harvests stage specific macronutrients in liquid form 
+providing secondary and micro nutrients which are required for this stage. More cuttings result in 
+less pod drop, heavier kernels are formed in pods and give higher quality. pods, heavier kernels in 
+pods formed and higher quality 4.1 Poshak Level-1 (Liquid Fermented Organic Fertilizer) Product 
+Intelligence Summary Company NamePoshak-L1 Product NameOrganic Fertilizer CategoryPlant Growth 
+Promoter (Organic) TypeLiquid Fermented Organic Fertilizer Product Code/SKU31010099 Pack Sizes1 L & 
+5 L OverviewPOSHAK LEVEL-1 is a Liquid Fermented Organic Manure designed for vege- tative stage 
+application. It enhances nutrient uptake, improves soil structure, and promotes healthy foliage and 
+root growth. The fermentation process converts organic matter into sim- pler, plant-available 
+forms, making it a sustainable choice for both organic and conventional farming systems. Key 
+Composition (Label Specs) •Moisture: 90–97% 16 Knowledge Base: •Total Organic Carbon: 14% (dry 
+basis) •Total N, P 2O5, K2O: 1.2% (dry basis) •C:N Ratio: up to 30% •pH: 6.5–8.4 •Conductivity≤4 
+dS/m •Heavy Metals (mg/kg, max): As 10, Cd 5, Cr 50, Cu 300, Hg 0.15, Ni 50, Pb 100, Zn 1000 
+Advantages •Improved nutrient availability •Enhanced soil structure •Nutrient-rich and 
+environmentally friendly •Long-lasting effects Dosage & Application Dosage1 L/acre StageVegetative 
+stage MethodDrip irrigation, drenching, or foliar spray FrequencyEvery 15–20 days depending on crop 
+growth Scientific Principle / Mode •Works on fermentation-based organic matter breakdown. •Provides 
+macro (NPK), secondary, and micronutrients in liquid form. •Improves C:N balance and maintains 
+optimal pH & conductivity for root growth. •Encourages beneficial microbes through enriched organic 
+matter. Unique Selling Proposition (USP) •Stage-specific vegetative nutrition •Nutrient-rich and 
+certified organic •Long shelf life (3 years) •Simple 1 L/acre dosage Crop Mapping (Examples) 
+•Paddy:Nutrient loss, weak roots, poor foliage→1 L/acre via irrigation every 7–10 days. 
+•Cotton:Weak branching, slow vegetative growth→1 L/acre via irrigation every 7–10 days. 
+•Vegetables:Poor nutrient availability, soil health issues→1 L/acre via irrigation every 7–10 days. 
+17 {knowledge_base} Product Information (Label)Batch: BFNN10k160; DOM: 25/02/2024; DOE: 24/02/2025; 
+MRP: 900 (1 L); Shelf life: 3 years; Lic. No.: SRD/39/ADDL.DA/FM/2017/20426. Manu- facturer: Biofac 
+Inputs Pvt. Ltd., 74C, Anrich Industrial Estate, IDA Bollaram, Sangareddy 502325. Feedback: +91 
+92980 11119, info@biofactor.in,www.biofactor.in. Storage: Shake well before use; store at room 
+temperature; protect from sunlight; for agricultural use only. Market & Competitor Highlights 
+•Generic LFOM:700–900/L; basic fermented manure; uncertified, short shelf life. 
+•Panchagavya/Jeevamruth:300–500/L; traditional inputs; lower nutrient consistency. •Other Organic 
+Manures:800–1000/L; general-purpose, delayed results. Poshak-L1 Advantage:Certified organic, 
+stage-specific, standardized nutrient content, 3- year shelf life, farmer-friendly dosage. 
+Positioning & Sales Pitch Ideal Target Segment:Farmers in Andhra Pradesh, Telan- gana, Maharashtra, 
+Karnataka.Target Crops:Paddy, Cotton, Vegetables.Problem Areas: Nutrient loss in vegetative stage, 
+weak roots, poor foliage, overuse of chemical fertilizers. Dealer Pitch: •Certified organic with 
+strong farmer demand. •Long shelf life (3 years) – zero stock loss. •Stage-specific (vegetative) 
+vs. generic LFOM. •Consistent results, easy farmer adoption (1 L/acre). Farmer Pitch: “Your crop 
+needs strong roots and lush leaves during vegetative stage. Poshak- L1 delivers that organically.” 
+“Chemical fertilizers give quick results but harm soil; Poshak-L1 improves yield & fertility 
+sustainably.” “Within 2–3 weeks, expect greener foliage, stronger branches, and healthy roots.” 
+Field Results & Research Validation •Trial Data:Demonstrations in paddy & cotton fields across AP & 
+Telangana. •Performance:Stronger roots, dense foliage, improved nutrient uptake. •Yield:20–25% 
+increase compared to untreated fields. •Certification:Certified organic under Biofactor standards. 
+•Farmer Feedback:Healthier soil, reduced chemical dependency, repeat adoption. FAQs UseFor 
+vegetative stage nutrition & soil health. DifferenceStage-specific, certified, nutrient-rich, 
+consistent quality. TimingApply at vegetative stage, 1 L/acre. CompatibilityMixable with 
+biofertilizers; avoid direct pesticide mixing. Cost900 per litre; 1 L per acre. 18
+
+ResultsVisible in 2–3 weeks. CertificationCertified organic; residue-free. Mixing with ChemicalsCan 
+be mixed with fertilizers; avoid pesticides. Regional Adaptation •AP & Telangana:Paddy, Cotton, 
+Vegetables — combats nutrient leaching, improves fertility. •Maharashtra:Cotton, Vegetables — 
+rebuilds soil structure, reduces chemical depen- dency. •Karnataka:Paddy, Horticulture — balances 
+vegetative nutrition, enhances soil health. Knowledge Base References •Product Brochure / Label 
+PDF: Poshak-L1 Label. •Field Trials: AP & Telangana demonstration reports. •Media: Field photos & 
+videos (paddy/cotton). •Marketing Collaterals: Posters, WhatsApp creatives. Keywords for AI / Voice 
+Agent“Vegetative stage biofertilizer”, “Organic manure for paddy”, “Cotton vegetative growth 
+solution”, “Soil fertility improvement organic product”, “1 litre per acre dosage”, “Certified 
+organic liquid manure”, “Reduce chemical fertilizer depen- dency”, “Stage-specific nutrition 
+product”. Extra NotesCommon employee mistake: Positioning as general-purpose instead of stage- 
+specific. Scientific rationale: Fermentation ensures faster nutrient uptake. Success stories: 
+Farmers in Telangana observed 20–25% higher yield and stronger roots after repeated use. 5 
+Biofactor’s chemical fertilizers: Today the agricultural sector is facing harsher and more 
+unpredictable weather conditions than ever before. Similarly, the soil’s nutrient capacity and 
+microbial population are reduced. Al- though farmers use traditional chem ical fertilizers found in 
+the market, the nutrient availability and utilization efficiency of plants has decreased due to the 
+high particle size of these nutrients. To overcome these problems, Biofactor has developed the 
+Microbe Metabolite Assisted Micron Sized Par ticles (MAMSP) technology, which uses microbes to 
+microsize the particle size. All the products made using this technology have very small sized of 
+nutrients. Thus the availability and utilization efficiency of nutrients to plants increases. They 
+work with three times higher efficiency compared to regular fertilizers. Therefore the biofactor 
+can get more results using less quantity of their chemical nutrients POTASSIUM THIOSULPHATE - 25% A 
+liquid nutrient mixture that provides potassium. It contains 25% potash as well as calcium, boron 
+and manganese required for flowering and fruiting de velopment. Formulated using MAMS (Microbe 
+Assisted Microsize Particle) tech nology.Thereby increasing nutrient availability and utilization 
+efficiency.After use of High-K Sugar content in fruits increases and fruit pulp enhances due to 
+which fruit gets more sweetened get more shining and gaining more weight that im proves quality of 
+fruit. 19 Instructions: Advantages: •Spraying during the flowering stage helps in healthy flowers 
+(more female f lowers) and more pollination. •Spraying at the pod stage contributes to more pod 
+formation, more harvests, less pod drop, more seeds in pods formed and higher quality •Increases 
+resistance to insects and pests. Helps to withstand water stress. Dosage: •Spray method 500 - 800 
+ml/acre (2.5-4.0 ml/liter of water) Application: •Give the plants by spraying or drip irrigation 
+during flowering stage, pod growth and fruiting stages. Frequency: •Spray or drip irrigation - once 
+every 7-10 days 5.0.1 CHELATED ZINC AS ZINC GLYCINE (LIQUID) Liquid nutrient mixture providing zinc 
+nutrient (6.8%). Zinc is in chelate form and forms stable complexes with zinc ions. This chelated 
+zinc does not become neutral when mixed with other elements in the soil. Formulated using MAMSP 
+(Microbe Assisted Microsize Particle) technology. Deficiency symptoms: Zinc deficiency is more 
+common in tender leaves. The leaves turn yellow and gradually turn brown. Zinc is of great im 
+portance in horticultural crops. Advantages: •Helps in photosynthesis, production of enzymes and 
+production of hor mones (auxins cy- tokines) required for crop growth. •Formulated by MAMS (Microbe 
+Assisted Microsize Particle) technology. So zinc is readily available to plants even in problem 
+soils and utilization efficiency is increased. •Healthy flowers are formed and a high percentage of 
+pollen is produced. High quality yields can be achieved. Dosage: •250 ml/acre (1.0-1.5 ml/liter of 
+water) Application: •It should be given to the plants by spraying as soon as nutrient deficiency is 
+observed. All crops should be sprayed once at the budding stage and once at flowering & fruiting 
+stage. Frequency: •As soon as nutritional deficiency is noticed, it should be used twice in 10 15 
+days 20 - Answer only from the above document 5.0.2 CHELATED BORON AS BORON GLYCINE (LIQUID) - 5% 
+Boron (5%) is a liquid nutrient mixture that provides the nutrient. Formu lated us- ing MAMS 
+(Microbe Assisted Microsize Particle) technology.Boron is of great importance in horticultural 
+crops Deficiency Symptoms: •Less number of female flowers in vine crops, oozing of milk from pods 
+in papaya and cracking of pods in mango and sapota crops. Advantages: •Plays a major role in the 
+formation of healthy reproductive parts. •By spraying during flowering, more female flowers will 
+come and more polli nation will occur. Thus higher yields can be achieved. •Spraying at the time of 
+fruiting and harvesting can prevent cracks on the fruit, increase the weight of the fruit and 
+achieve high quality Dosage: •250 ml/acre (1.0-1.5 ml/liter of water) Application: •It should be 
+given to the plants by spraying as soon as nutrient deficiency is observed. All crops should be 
+sprayed once at bud stage and once every 30-45 days during flowering & fruiting. Frequancy: •As 
+soon as nutritional deficiency is observed, it should be used twice in a period of 20-30 days. 
+5.0.3 Ferron 19% Ferrous Sulphate Nutrient mixture providing iron nutrient. Formulated using MAMS 
+(Microbe Assisted Microsize Particle) technology. Deficiency Symptoms: Iron deficiency causes 
+leaves to lose green color and turn white (chlorosis) and plants become stunted. Advantages: •Plays 
+a major role in making leafy greens required for photosynthesis. It helps in making plant food. 
+•Iron is an important cofactor in the production of enzymes required for vari ous biological 
+functions in the plant. •These enzymes are useful in plants for nitrogen fixation, electron supply, 
+synthesis of DNA and induction of antiox idants. Iron plays a vital role in respiration and 
+transport of nutrients in plants. 21 - Always respond in Telugu Dosage: •1 gm/liter of water 
+Application: •It should be given to the plants by spraying as soon as nutrient deficiency is 
+noticed. All crops should be sprayed once at the budding stage and once at flowering & fruiting 
+stage. Frequency •As soon as nutritional deficiency is noticed, it should be used twice in 10-15 
+days 5.0.4 MAGNESIUM HYDROXIDE AND ZINC PHOSPHATE A liquid nutrient mixture that provides magnesium 
+(24%) and Zinc (10%). Formulated using MAMS (Microbe Assisted Microsize Particle) technology. 
+Deficiency symptoms: When magnesium is deficient, the center of the leaves or the entire leaf turns 
+yellow and the leaves become smaller Advantages: •Magnesium is an essential component of 
+chlorophyll and plays a major role in photosyn- thesis. Stimulates enzymes useful in nutrient 
+transport. •This helps in supplying nutrients like phosphorus and zinc and iron to the growing 
+parts along with magnesium. •Protects plants from waterlogging and pests while increasing nutrient 
+avail ability and utilization efficiency. Dosage: •500 ml/acre (2.5 ml/liter of water) Application: 
+•Apply to the plants by spraying as soon as nutrient deficiency is noticed. All crops should be 
+sprayed once at budding stage and once every 30-45 days during flowering & fruiting Frequency: •As 
+soon as nutritional deficiency is observed, it should be used twice in 10-15 days. 5.0.5 TRuMiN – 
+MANGANESE CARBONATE SUSPENSION CONCENTRATE Description: Liquid nutrient mixture providing manganese 
+(26%), formulated using MAMS (Microbe Assisted Microsize Particle) technology. Deficiency Symptoms: 
+•Leaves yellow from tips (chlorosis), stunted growth. •Severe deficiency: dark brown burnt spots, 
+leaves dry and crack when touched. 22 - Be conversational and helpful Advantages: •Stimulates 
+enzymes for photosynthesis, respiration, and nitrogen metabolism. •Essential for chloroplasts and 
+water supply in photosynthesis. •Helps plants withstand water stress. Dosage & Application: 
+•Dosage: 500 ml/acre (2.5 ml/liter of water) •Spray when deficiency observed. •All crops: once at 
+budding stage and once at flowering & fruiting stage. •Repeat twice within 10–15 days if deficiency 
+continues. 5.0.6 COPSE – 24% Copper Sulphate Description: Nutrient blend enriched with copper 
+(24%), formulated using MAMS technology. Deficiency Symptoms: •Leaves yellow from tips inward 
+(chlorosis), curling, distorted shapes, stunted growth. Benefits: •Essential for enzyme production, 
+electron transport, ATP production. •Synthesizes iron-containing proteins in chloroplasts, vital 
+for photosynthesis. •Protects against pests and fungal growth. Dosage & Application: •Dosage: 500 
+gm/acre (2 gm/liter of water) •Spray promptly when deficiency observed. •Apply once at budding 
+stage and again at budding & seeding stages. •Repeat twice in 10–15 days for optimal results. 5.0.7 
+BSL4Agri – A Novel Product for Viral Diseases Description: Liquid nutrient mixture containing 
+silver and copper (microsized particles via MAMS), reduces growth of fungi, viruses, and bacteria. 
+Mode of Action: Emits toxic ions that penetrate and destroy viruses and bacteria; reduces pathogen 
+resistance in plants. Benefits: •Supports enzyme production for plant metabolism and ATP synthesis. 
+•Protects plants from viral and bacterial diseases. 23 """ Dosage & Application: •Dosage: 1 L/acre 
+(5 ml/liter of water) •Spray as soon as virus/disease observed. •Apply twice within 7–10 days. 5.1 
+What does that mean? The method of irrigating the field in which the nutrient solu tions are 
+dropped by drop near the water pipe or canal is called drop method. 5.2 What is the use? Non-drip 
+farmers cannot apply liquid nutrients through the soil. At such time, the nutrient solution reaches 
+the entire f ield evenly until the field is watered by providing it in drop mode 5.3 NUTRI6 / 
+Formula 6 – Liquid Micronutrient Blends NUTRI6|Formula 6 Composition: Zn 6%, Fe 4%, Mn 3%, B 2%, Cu 
+1%, Mo 0.05% (MAMS technology). Problem: Farmers using complex fertilizers/DAP; micronutrient 
+deficiency in young leaves (chlorosis, stunted growth, brown burnt spots). Advantages: •Prevents 
+micronutrient deficiencies at all growth stages. •Efficient absorption via MAMS technology. 
+•Promotes healthy foliar growth, strong fruit set, high coverage, high-quality yields. Dosage & 
+Application: •Dosage: 500 ml/acre (2.5 ml/liter of water) •Spray when deficiency observed, once at 
+budding stage, once at flowering & fruiting stage. •Better results: spray every 15 days in 
+vegetables. •Repeat twice within 10–15 days if deficiency continues. Nutrito6|Formula 6 
+Composition: Zn 5%, Fe 2%, Mn 2%, B 0.5% (MAMS technology). Problem: Micronutrient deficiencies due 
+to incomplete nutrition practices; plants weaker, virus- prone. Advantages: •Prevents micronutrient 
+deficiencies in all crops even with virus infection. •Efficient absorption via MAMS technology. 
+•Supports healthy foliar growth, strong fruit set, coverage, and high-quality yields. 24 ``` Dosage 
+& Application: •Dosage: 300 ml/acre (1.5 ml/liter of water) •Spray when deficiency observed, once 
+at budding, once at flowering & fruiting stage. •Repeat twice within 10–15 days; better results for 
+vegetables with 15-day interval sprays. 5.4 FLOWMIN – Specially Designed for Drip Irrigation 
+Schedule: 1 (Chemical Fertilizers) Form: Liquid Fertilizer Crops: All crops Packaging: 5 & 15 Ltr 
+Description:Liquid nutrient mixture for drip irrigation containing N, P, K as primary nu- trients 
+and secondary/micronutrients in nano size for efficient root absorption. Early stage application 
+improves root system, branching, and healthy green growth. FLOWMIN Variants & Dosage 08-08-08: N 
+8%, P 8%, K 8% Early crop stage: 2.5–4.0 L/acre via drip every 4 days. Supports strong roots, more 
+branches, healthy growth. 11-11-08: N 11%, P 11%, K 8%, Zn 0.7%, B 0.5–0.7% Vegetative stage: 
+2.5–4.0 L/acre via drip every 4 days. Supports healthy flowers, pollination. 06-00-18: N 6%, P 0%, 
+K 18%, Ca 5%, Mg 2%, B 0.5–0.8% Flowering & fruiting: 2.5–4.0 L/acre via drip every 4 days. 
+Supports pod formation, higher yield, heavier seeds. CANMAG: N 10%, nitrate N 8.5%, Ca 15%, Mg 2% 
+Pod & cutting stages: 2.5–4.0 L/acre via drip every 4 days. Improves pod color, seed weight, 
+quality. 5.4.1 Sampoorna – Specially Designed for Foliar Nutrigation Schedule: 1 (Liquid 
+Fertilizer) Form: Liquid Fertilizer Crops: All crops Packaging: 1 Ltr 25
+
+Description:Complete series of foliar spray nutrient blends with nano-size particles for effi- 
+cient leaf absorption. Sampoorna Variants & Dosage 08-08-08: N 8%, P 8%, K 8% Spray 1.5–2.0 L/acre 
+every 7–10 days, early stage. 11-11-08: N 11%, P 11%, K 8%, Zn 0.7%, B 0.5–0.7% Spray 1.5–2.0 
+L/acre every 7–10 days at vegetative stage. 06-00-18: N 6%, P 0%, K 18%, Ca 5%, Mg 2% Spray 1.5–2.0 
+L/acre every 7–10 days, flowering & fruiting stage. CANMAG: N 10%, nitrate N 8.5%, Ca 15%, Mg 2% 
+Spray 2.5–4.0 L/acre at pod & cutting stages. 6 Agriseal – A Novel Product for Stress Management 
+Description: Liquid blend with Vitamin C, amino acids, selenium, silica, seaweed; alleviates 
+climatic and biotic stresses. Advantages: •Helps plants cope with drought, heat, cold, salinity, 
+pests, and diseases. •Supports metabolism, carbohydrate synthesis, nucleic acids, plant growth, and 
+stress re- sistance. •Improves quality yields during critical stages (flowering, pod, harvest). 
+Dosage & Application: •Spray: 500 ml/acre (2.5 ml/liter) •Drip irrigation: 1 L/acre •Apply once 
+during waterlogging, once during flowering, fruiting, or heavy harvests. Packaging: •250 ml, 500 
+ml, 1 Ltr 6.1 BOC – A Novel Product of Liquid Organic Carbon Description: Bio-organic carbon 
+mixture derived from microbial & plant residues; enhances soil structure and nutrient availability. 
+Advantages: •Delivers essential nutrients (N, P, K) aligned with crop growth. •Enhances water 
+retention. •Supports microbial nutrient processing. •Promotes holistic crop wellness & higher 
+yields. 26
+### Change LLM Model
+Dosage & Application: •5 L/acre •Apply via drip irrigation or drop method during initial field 
+preparation and subsequent stages; repeat twice for same garden crops. 6.2 Invictus – A Novel 
+Product for Soil-Borne Diseases Description: Biological control mixture (Trichoderma viridae, 
+Trichoderma harzianum, Pseu- domonas fluorescens) for soil-borne and airborne diseases. Mode of 
+Action: Controls crop-damaging fungi via enzymes and secondary metabolites. Types & Application 
+•Invictus V:Trichoderma viridae, 2×107CFU/g. Controls root rot, damping off,Al- 
+ternaria,Colletotrichum,Cercospora, and other fungal diseases. •Invictus H:Trichoderma harzianum, 
+2×107CFU/g. Similar disease control as Invictus V. Application Methods •Per Acre: 10 kg •Seed 
+Treatment: 40 g/kg seed + 50 ml water, dry 30 min in shade before sowing. •Before Sowing: 50 g 
+Invictus + 10 kg cattle manure + 1 kg neem flour; shade for 15 days with intermittent water; then 
+apply to 1-acre field. •Seedling Plants: 100 g Invictus in 20 L water; submerge roots 30 min before 
+planting. •Main Field: 10 kg Invictus + 200 kg cattle manure + 20 kg neem flour; shade for 15 days, 
+sprinkle water intermittently, then apply to field. 6.3 Invictus (Trichoderma viride 1.5% WP) 
+Expanded Product Intelligence (Merged) CompanyBiofac Inputs Private Limited ProductInvictus 
+CategoryCABI Bio Protection – Soil-borne Disease Controller Product Code / SKU28332990 Pack Sizes1 
+kg & 10 kg CompositionTrichoderma viride1.5% WP; CFU≥2×106/g; Carboxy Methyl Cellulose 1.5%; 
+Carrier (Talc) 97%. Mechanism of Action (MoA)Competitive exclusion, mycoparasitism, and secretion 
+of an- tifungal metabolites. The Trichoderma culture colonizes the rhizosphere, outcompeting 
+pathogens and promoting root vigor. 27 Update `.env`: OverviewInvictus is a novel soil-borne 
+disease controller containing liveTrichoderma viride culture (1.5% W.P.) with a minimum CFU count 
+of 2×106/g. It effectively controls seed- and soil-borne pathogens such asRhizoctonia 
+solani,Fusarium,Pythium,Phytophthora,Verticillium, Alternaria,Colletotrichum, andCercospora. It is 
+safe, residue-free, and compatible with organic systems. Key Composition (Label Specs) •Trichoderma 
+viride:1.5% •CFU Count:2×106per gram (minimum) •Carboxy Methyl Cellulose:1.5% •Carrier (Talc):97% 
+Mechanism SummaryThe activeTrichoderma viridesuppresses pathogens via: •Competitive 
+exclusion:Outcompetes fungal pathogens for space and nutrients. •Mycoparasitism:Directly 
+parasitizes harmful fungi. •Antifungal metabolites:Produces compounds that inhibit pathogen growth. 
+•Root zone colonization:Improves rhizosphere activity, enhancing plant vigor and dis- ease 
+resistance. Crop Mapping (Examples) •Tomato:Root rot, damping-off — before transplanting — 10 
+kg/acre with FYM. •Okra:Seed/soil-borne diseases — before sowing — 10 kg/acre with FYM. 
+•Potato:Soil-borne rot — before planting — 10 kg/acre, soil drench. •Chilli:Wilt, root rot — before 
+transplanting — 10 kg/acre via drenching/bed treatment. Usage Guidelines When to UseAfter ploughing 
+and before planting or transplanting. How to UseMix 10 kg Invictus with 2.5 tons/acre 
+well-decomposed FYM; apply uniformly across the soil. CompatibilityCompatible with biofertilizers; 
+avoid mixing with chemical fungicides. StorageStore in a cool, dry place away from sunlight. Shelf 
+Life12 months from date of manufacture. Advantages •Uses validated strainIIHR-TV-5(Accession No. 
+ITCC 6889) •High CFU count ensures strong pathogen suppression. •Broad-spectrum control against 
+multiple fungal diseases. •Safe, eco-friendly alternative to chemical fungicides. •Suitable for 
+wide crop range — cereals, vegetables, fruits, spices. 28 ```env Market & Competitor Intelligence 
+•Tricho-V (Multiplex):Trichoderma viride 1.5% WP — 250–300/kg — Invictus advan- tage: higher CFU, 
+enriched formulation. •Bio-Tricho (Anand Agro):Trichoderma viride 1.0% — 220/kg — Invictus 
+advantage: better stability & consistent CFU. Invictus Advantage:Scientifically validated strain 
+(IIHR-TV-5), higher CFU density, en- riched carrier system, consistent field results. Positioning & 
+Sales Pitch Target Segment:Farmers growing vegetables, fruits, and commercial crops prone to wilt 
+or root rot. Dealer Pitch: •Strong market demand for Trichoderma biofungicides. •Validated strain 
+ensures consistent field efficacy. •25–30% yield increase when combined with FYM. •Long shelf life, 
+proven performance, and repeat orders. Farmer Pitch: “Invictus protects your crop from soil and 
+root diseases naturally.” “Improves root health, boosts yield, and keeps the soil alive.” 
+“Residue-free, organic-safe, and de- livers visible results within 2–3 weeks.” Field Results & 
+Research Validation •Trials:Tomato, chilli, and cotton (AP & Telangana). •Results:25–35% disease 
+reduction; 20–30% yield improvement. •Impact:Stronger roots, healthier soil, reduced pathogen load 
+after repeated use. •Certification:Validated strain (IIHR-TV-5), residue-free, and eco-safe. FAQs 
+UseControls soil-borne fungal diseases (wilt, root rot, damping-off). When to ApplyBefore 
+sowing/transplanting. MixingCompatible with biofertilizers; avoid chemical fungicides. Organic 
+StatusCertified residue-free and organic-compatible. Visible Results2–3 weeks after application. 
+Can I mix with chemicals?No, avoid mixing with chemical fertilizers or fungicides. Regional 
+Adaptation •Andhra Pradesh & Telangana:Tomato, Chilli, Turmeric — prevents fungal infections during 
+Kharif & Rabi. •Karnataka & Maharashtra:Vegetables, pulses, horticultural crops — promotes soil 
+microbial health. 29 LLM_MODEL=gpt-4o # or gpt-4, gpt-3.5-turbo, etc. Knowledge Base References 
+•Product Brochure / Label: Invictus PDF. •Field Trials / Publications: AP & Telangana demos. 
+•Media: Field photos, demonstration videos. •Marketing Collaterals: Posters, WhatsApp creatives. 
+Keywords for AI / Voice Agent“Soil-borne disease control”, “Trichoderma viride bio- fungicide”, 
+“Root rot prevention organic product”, “Residue-free biocontrol”, “Rhizoctonia Fusarium Pythium 
+control”, “Eco-friendly fungicide alternative”, “1 kg Trichoderma per acre”, “Certified biocontrol 
+product”. Extra NotesCommon mistake: Mixing with chemical fungicides. Scientific validation: Uses 
+IIHR-TV-5 strain (ITCC 6889) for reliability. Success: Farmers in Telangana and AP observed visible 
+disease reduction and improved root vigor within 2–3 weeks. 6.4 Native Neem – A Novel Botanical 
+Insecticide Active Ingredient: Azadirachtin 300–10000 ppm Target Pests: Sap-sucking insects 
+(whitefly, greenfly, aphids, etc.), early-stage caterpillars. Mode of Action:Anti-oviposition 
+(disrupts egg-laying). Anti-repellent & anti-growth regulation. Digestive disruption in worms. 
+Variants & Dosage:Native Neem 300 ppm: 5 ml/liter water Native Neem 10000 ppm: 1 ml/liter water 
+Application:Spray at first crop stage when pests expected. Repeat every 15–20 days; increase 
+frequency if infestation is high 6.5 TRAICORE – Plant Growth Regulator Active Ingredient: 
+Tricontanol (natural long-chain alcohol) Benefits: •Enhances photosynthesis, nutrient uptake, 
+stress tolerance •Promotes cell division, root development, flowering & fruit set •Boosts yield, 
+quality, and protein synthesis Formulations & Dosage: •TRIACORE EC 0.05% – 1 ml/L water •TRIACORE 
+EW 0.1% – 1 ml/L water •TRIACORE GR 0.05% – granular, soil application Application: Promotes 
+growth, productivity, and quality across various crops 30 ``` 6.6 Pentazia – Advanced Biological 
+Fungicide Description: Protects plants from fungal diseases (powdery mildew, rust, blight) 
+Benefits: •Powerful fungal control •Provides vital nutrients •Enhances disease resistance 
+•Environmentally safe Dosage & Application:5 ml/L water; spray once during waterlogging, once 
+during flower- ing/fruiting/heavy harvest Packaging: 250 ml, 500 ml, 1 Ltr 6.7 NEOLIFE – A Soil 
+Health Revolution Description: Biological product revitalizing soil health with beneficial 
+microorganisms Benefits: •Effective disease control (root rot, damping-off) •Enhances soil 
+fertility (fixes N, P, K) •Promotes plant growth, root development, productivity Dosage & 
+Application:5 L/acre via drip irrigation 6.8 DFUSE – A Natural Solution for Larval Pests 
+Description: Microbial consortium targeting larval pests Benefits: •Efficient larval control 
+•Provides essential nutrients •Improves soil health •Eco-friendly Dosage & Application:5 ml DFUSE / 
+1 L water 6.9 DFNDR – A Natural Shield Against Sucking Pests Description: Eco-friendly solution 
+targeting sucking pests Benefits: •Effective pest control •Promotes balanced plant growth & stress 
+tolerance •Safe for beneficial insects & pollinators 31
+
+Dosage & Application:5 ml DFNDR / 1 L water 32
+### Add More Languages
+Modify the system prompt to support multiple languages or remove the Telugu-only restriction.
+## 📂 Project Structure
+``` pipecat-quickstart/ ├── bot.py # Main bot application ├── murf_tts_service.py # Custom Murf TTS 
+integration ├── resource_document.txt # Knowledge base (bio-fertilizer info) ├── .env # Environment 
+configuration ├── env.example # Example environment file ├── pyproject.toml # Python dependencies 
+├── Dockerfile # Docker configuration └── README.md # This file ```
+## 🐛 Troubleshooting
+### Bot shows "Connecting" but never connects
+- Check browser permissions for microphone - Try Chrome/Edge (best WebRTC support) - Check browser 
+console (F12) for errors
+### Cartesia HTTP 402 Error
+- API key has no credits - Switch to another TTS provider: ```bash TTS_PROVIDER=elevenlabs # or 
+  murf ```
+### Missing ffmpeg Warning
+```bash
+# Ubuntu/Debian
+sudo apt install ffmpeg
+# macOS
+brew install ffmpeg ```
+### Python dotenv parse error (line 66)
+- Remove or comment malformed lines in `.env` - Ensure all lines follow `KEY=value` format
+### STT/TTS Not Working
+- Verify API keys are correct - Check API key has credits/quota - Ensure provider is spelled 
+correctly in `.env`
+## ☁️ Deploy to Production
+### Deploy to Pipecat Cloud
+1. **Install Pipecat CLI:** ```bash uv tool install pipecat-ai-cli ``` 2. **Login:** ```bash 
+pipecat cloud auth login ``` 3. **Upload Secrets:** ```bash pipecat cloud secrets set 
+quickstart-secrets --file .env ``` 4. **Build & Deploy:** ```bash pipecat cloud docker build-push 
+pipecat cloud deploy ``` 5. **Access:** Visit [Pipecat Cloud Dashboard](https://pipecat.daily.co/)
+### Deploy to Custom Server
+1. **Build Docker image:** ```bash docker build -t voice-ai-bot . ``` 2. **Run container:** ```bash 
+docker run -p 7860:7860 --env-file .env voice-ai-bot ```
+## 📊 Performance Tips
+- **Low latency:** Use Murf or ElevenLabs TTS with Soniox STT - **Best accuracy:** Use Deepgram STT 
+- **Telugu optimization:** Use Sarvam for both STT/TTS - **Cost optimization:** Use Soniox STT with 
+Cartesia TTS
+## 🔐 Security Notes
+- Never commit `.env` file to git - Rotate API keys regularly - Use environment variables in 
+production - Limit API key permissions when possible
+## 📖 Additional Resources
+- [Pipecat Documentation](https://docs.pipecat.ai/) - [Pipecat Discord](https://discord.gg/pipecat) 
+- [VS Code Copilot Instructions](.github/copilot-instructions.md)
+## 📝 License
+See LICENSE file for details.
+## 🤝 Contributing
+Contributions welcome! Please open an issue or PR. --- **Need Help?** Check troubleshooting section 
+or join [Pipecat Discord](https://discord.gg/pipecat). EOF echo "✅ Updated README.md"
+cd /home/gunjesh/pipecat-quickstart && wc -l README.md && echo "" && echo "✅ README.md updated successfully!" && echo "" && echo "Preview:" && head -50 README.md
+cd /home/gunjesh/pipecat-quickstart && ls -lh README.md && echo "" && cat README.md | head -80
+cd /home/gunjesh/pipecat-quickstart && [ -f README.md ] && echo "✅ README.md exists" && wc -l README.md || echo "❌ README.md not found"
+

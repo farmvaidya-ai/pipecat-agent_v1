@@ -1,173 +1,129 @@
-# Pipecat Quickstart
+# Pipecat Voice AI Bot - Telugu Bio-Fertilizer Assistant
 
-Build and deploy your first voice AI bot in under 10 minutes. Develop locally, then scale to production on Pipecat Cloud.
+A production-ready voice AI bot that provides expert guidance on bio-fertilizers and organic farming in Telugu language. Built with Pipecat framework with flexible STT/TTS provider options and knowledge base integration.
 
-**Two steps**: [🏠 Local Development](#run-your-bot-locally) → [☁️ Production Deployment](#deploy-to-production)
+## 🎯 Features
 
-## Step 1: Local Development (5 min)
+- **Telugu-Only Responses**: AI responds exclusively in Telugu language
+- **Knowledge Base Integration**: Answers based on comprehensive bio-fertilizer documentation (60K+ characters)
+- **Multiple STT Providers**: Soniox, Deepgram, Sarvam
+- **Multiple TTS Providers**: Murf (custom), ElevenLabs, Cartesia, Sarvam
+- **WebRTC Connection**: Real-time voice communication
+- **Production Ready**: Deploy to Pipecat Cloud or run locally
 
-### Prerequisites
-
-#### Environment
+## 📋 Prerequisites
 
 - Python 3.10 or later
-- [uv](https://docs.astral.sh/uv/getting-started/installation/) package manager installed
+- [uv](https://docs.astral.sh/uv/getting-started/installation/) package manager
 
-#### AI Service API keys
+## 🚀 Quick Start
 
-You'll need API keys from three services:
+### 1. Clone & Install
 
-- [Deepgram](https://console.deepgram.com/signup) for Speech-to-Text
-- [OpenAI](https://auth.openai.com/create-account) for LLM inference
-- [Cartesia](https://play.cartesia.ai/sign-up) for Text-to-Speech
+```bash
+git clone <your-repo-url>
+cd pipecat-quickstart
+uv sync
+```
 
-> 💡 **Tip**: Sign up for all three now. You'll need them for both local and cloud deployment.
+### 2. Configure Environment
 
-### Setup
+Copy the example environment file:
 
-Navigate to the quickstart directory and set up your environment.
+```bash
+cp env.example .env
+```
 
-1. Clone this repository
+Edit `.env` with your API keys:
 
-   ```bash
-   git clone https://github.com/pipecat-ai/pipecat-quickstart.git
-   cd pipecat-quickstart
-   ```
+```env
+# Required
+OPENAI_API_KEY=your_openai_api_key
 
-2. Configure your API keys:
+# STT Provider Keys (choose one)
+SONIOX_API_KEY=your_soniox_api_key
+DEEPGRAM_API_KEY=your_deepgram_api_key
+SARVAM_API_KEY=your_sarvam_api_key
 
-   Create a `.env` file:
+# TTS Provider Keys (choose one)
+MURF_API_KEY=your_murf_api_key
+ELEVEN_LABS_API_KEY=your_elevenlabs_api_key
+CARTESIA_API_KEY=your_cartesia_api_key
 
-   ```bash
-   cp env.example .env
-   ```
+# Provider Selection
+STT_PROVIDER=soniox        # Options: soniox, deepgram, sarvam
+TTS_PROVIDER=elevenlabs    # Options: murf, elevenlabs, cartesia, sarvam
 
-   Then, add your API keys:
+# Knowledge Base
+KNOWLEDGE_FILE=resource_document.txt
 
-   ```ini
-   DEEPGRAM_API_KEY=your_deepgram_api_key
-   OPENAI_API_KEY=your_openai_api_key
-   CARTESIA_API_KEY=your_cartesia_api_key
-   ```
+# Optional: Daily.co for cloud deployment
+DAILY_API_KEY=your_daily_api_key
+```
 
-3. Set up a virtual environment and install dependencies
-
-   ```bash
-   uv sync
-   ```
-
-### Run your bot locally
+### 3. Run the Bot
 
 ```bash
 uv run bot.py
 ```
 
-**Open http://localhost:7860 in your browser** and click `Connect` to start talking to your bot.
+Open http://localhost:7860/client in your browser and click **Connect**.
 
-> 💡 First run note: The initial startup may take ~20 seconds as Pipecat downloads required models and imports.
+## 🎤 STT Providers
 
-🎉 **Success!** Your bot is running locally. Now let's deploy it to production so others can use it.
+| Provider | Speed | Accuracy | Best For |
+|----------|-------|----------|----------|
+| **Soniox** | Ultra-fast | High | Real-time conversations |
+| **Deepgram** | Fast | Very High | Accuracy-critical apps |
+| **Sarvam** | Fast | High | Telugu language optimization |
 
----
-
-## Step 2: Deploy to Production (5 min)
-
-Transform your local bot into a production-ready service. Pipecat Cloud handles scaling, monitoring, and global deployment.
-
-### Prerequisites
-
-1. [Sign up for Pipecat Cloud](https://pipecat.daily.co/sign-up).
-
-2. Set up Docker for building your bot image:
-
-   - **Install [Docker](https://www.docker.com/)** on your system
-   - **Create a [Docker Hub](https://hub.docker.com/) account**
-   - **Login to Docker Hub:**
-
-     ```bash
-     docker login
-     ```
-
-3. Install the Pipecat CLI
-
-   ```bash
-   uv tool install pipecat-ai-cli
-   ```
-
-   > Tip: You can run the `pipecat` CLI using the `pc` alias.
-
-### Configure your deployment
-
-The `pcc-deploy.toml` file tells Pipecat Cloud how to run your bot. **Update the image field** with your Docker Hub username by editing `pcc-deploy.toml`.
-
-```ini
-agent_name = "quickstart"
-image = "YOUR_DOCKERHUB_USERNAME/quickstart:0.1"  # 👈 Update this line
-secret_set = "quickstart-secrets"
-
-[scaling]
-	min_agents = 1
-```
-
-**Understanding the TOML file settings:**
-
-- `agent_name`: Your bot's name in Pipecat Cloud
-- `image`: The Docker image to deploy (format: `username/image:version`)
-- `secret_set`: Where your API keys are stored securely
-- `min_agents`: Number of bot instances to keep ready (1 = instant start)
-
-> 💡 Tip: [Set up `image_credentials`](https://docs.pipecat.ai/deployment/pipecat-cloud/fundamentals/secrets#image-pull-secrets) in your TOML file for authenticated image pulls
-
-### Log in to Pipecat Cloud
-
-To start using the CLI, authenticate to Pipecat Cloud:
-
+**Switch STT Provider:**
 ```bash
-pipecat cloud auth login
+# In .env
+STT_PROVIDER=deepgram
 ```
 
-You'll be presented with a link that you can click to authenticate your client.
+## 🔊 TTS Providers
 
-### Configure secrets
+| Provider | Latency | Quality | Best For |
+|----------|---------|---------|----------|
+| **Murf** | Ultra-low | High | Real-time, natural voice |
+| **ElevenLabs** | Ultra-low | Very High | Premium quality |
+| **Cartesia** | Low | High | Balanced performance |
+| **Sarvam** | Low | High | Telugu native voice |
 
-Upload your API keys to Pipecat Cloud's secure storage:
-
+**Switch TTS Provider:**
 ```bash
-pipecat cloud secrets set quickstart-secrets --file .env
+# In .env
+TTS_PROVIDER=murf
 ```
 
-This creates a secret set called `quickstart-secrets` (matching your TOML file) and uploads all your API keys from `.env`.
+**Murf Voice Options:**
+- `en-US-ken` - Male (default)
+- `en-US-natalie` - Female
+- `en-US-wayne` - Deep male
+- `en-IN-priya` - Indian female
 
-### Build and deploy
+## 📚 Knowledge Base
 
-Build your Docker image and push to Docker Hub:
+The bot uses a comprehensive bio-fertilizer document (`resource_document.txt`) covering:
+- Bio-fertilizers (NPK, Mycorrhiza, etc.)
+- Organic fertilizers
+- Chemical fertilizers
+- Product information from Biofactor
 
+### Update Knowledge Base
+
+1. **From PDF:**
 ```bash
-pipecat cloud docker build-push
-```
+uv run python3 << 'EOF'
+import PyPDF2
 
-Deploy to Pipecat Cloud:
+with open('your_document.pdf', 'rb') as file:
+    pdf_reader = PyPDF2.PdfReader(file)
+    text = []
+    for page in pdf_reader.pages:
+        text.append(page.extract_text())
 
-```bash
-pipecat cloud deploy
-```
-
-### Connect to your agent
-
-1. Open your [Pipecat Cloud dashboard](https://pipecat.daily.co/)
-2. Select your `quickstart` agent → **Sandbox**
-3. Allow microphone access and click **Connect**
-
----
-
-## What's Next?
-
-**🔧 Customize your bot**: Modify `bot.py` to change personality, add functions, or integrate with your data  
-**📚 Learn more**: Check out [Pipecat's docs](https://docs.pipecat.ai/) for advanced features  
-**💬 Get help**: Join [Pipecat's Discord](https://discord.gg/pipecat) to connect with the community
-
-### Troubleshooting
-
-- **Browser permissions**: Allow microphone access when prompted
-- **Connection issues**: Try a different browser or check VPN/firewall settings
-- **Audio issues**: Verify microphone and speakers are working and not muted
+with open('resource_document.txt', 'w', encoding='utf-8') as f:
+    f.write('\n\n'.join(text))
