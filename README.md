@@ -98,8 +98,7 @@ TTS_PROVIDER=murf
 ```
 
 **Murf Voice Options:**
-- `en-US-ken` - Male (default)
-- `en-US-natalie` - Female
+- `en-US-ronnie` - Male, supports Telugu (current)
 - `en-US-wayne` - Deep male
 - `en-IN-priya` - Indian female
 
@@ -126,3 +125,41 @@ with open('your_document.pdf', 'rb') as file:
 
 with open('resource_document.txt', 'w', encoding='utf-8') as f:
     f.write('\n\n'.join(text))
+
+## 🔧 Additional Requirements for Murf TTS
+
+If using Murf TTS, install additional system dependencies:
+
+
+
+Configure Murf settings in `.env`:
+
+
+
+The bot uses a custom Murf TTS service (`murf_tts_service.py`) for streaming audio output.
+
+**Note:** The voice ID `Karan` was invalid; updated to `en-US-ronnie` which supports Telugu.
+
+## 🔧 Additional Requirements for Murf TTS
+
+If using Murf TTS, install additional system dependencies:
+
+```bash
+sudo apt install ffmpeg
+pip install pydub
+```
+
+Configure Murf settings in `.env`:
+
+```env
+# Murf TTS Configuration (for Telugu voice)
+MURF_API_KEY=your_murf_api_key
+MURF_VOICE_ID=en-US-ronnie
+MURF_STYLE=Conversational
+MURF_MODEL=FALCON
+MURF_REGION=in
+```
+
+The bot uses a custom Murf TTS service (`murf_tts_service.py`) for streaming audio output.
+
+**Note:** The voice ID `Karan` was invalid; updated to `en-US-ronnie` which supports Telugu.
