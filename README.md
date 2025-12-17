@@ -137,6 +137,12 @@ Configure Murf settings in `.env`:
 
 
 The bot uses a custom Murf TTS service (`murf_tts_service.py`) for streaming audio output.
+**Python Packages:** Ensure `aiohttp` is installed (usually via `uv sync`). If needed: `pip install aiohttp`.
+
+**Runtime Notes:**
+- The service streams audio frames for low-latency TTS.
+- Verify ffmpeg path with `which ffmpeg`.
+- Test API key and voice ID validity.
 
 **Note:** The voice ID `Karan` was invalid; updated to `en-US-ronnie` which supports Telugu.
 
@@ -146,6 +152,7 @@ If using Murf TTS, install additional system dependencies:
 
 ```bash
 sudo apt install ffmpeg
+pip install pydub
 pip install pydub
 ```
 
@@ -161,5 +168,11 @@ MURF_REGION=in
 ```
 
 The bot uses a custom Murf TTS service (`murf_tts_service.py`) for streaming audio output.
+**Python Packages:** Ensure `aiohttp` is installed (usually via `uv sync`). If needed: `pip install aiohttp`.
+
+**Runtime Notes:**
+- The service streams audio frames for low-latency TTS.
+- Verify ffmpeg path with `which ffmpeg`.
+- Test API key and voice ID validity.
 
 **Note:** The voice ID `Karan` was invalid; updated to `en-US-ronnie` which supports Telugu.
