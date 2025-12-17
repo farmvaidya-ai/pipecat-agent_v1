@@ -126,10 +126,6 @@ with open('your_document.pdf', 'rb') as file:
 with open('resource_document.txt', 'w', encoding='utf-8') as f:
     f.write('\n\n'.join(text))
 
-## 🔧 Additional Requirements for Murf TTS
-
-If using Murf TTS, install additional system dependencies:
-
 
 
 Configure Murf settings in `.env`:
@@ -146,13 +142,8 @@ The bot uses a custom Murf TTS service (`murf_tts_service.py`) for streaming aud
 
 **Note:** The voice ID `Karan` was invalid; updated to `en-US-ronnie` which supports Telugu.
 
-## 🔧 Additional Requirements for Murf TTS
-
-If using Murf TTS, install additional system dependencies:
-
 ```bash
 sudo apt install ffmpeg
-pip install pydub
 pip install pydub
 ```
 
