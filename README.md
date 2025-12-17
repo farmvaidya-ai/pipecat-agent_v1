@@ -125,7 +125,7 @@ with open('your_document.pdf', 'rb') as file:
 
 with open('resource_document.txt', 'w', encoding='utf-8') as f:
     f.write('\n\n'.join(text))
-
+```
 
 
 Configure Murf settings in `.env`:
