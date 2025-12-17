@@ -88,7 +88,6 @@ STT_PROVIDER=deepgram
 | Provider | Latency | Quality | Best For |
 |----------|---------|---------|----------|
 | **Murf** | Ultra-low | High | Real-time, natural voice |
-| **ElevenLabs** | Ultra-low | Very High | Premium quality |
 | **Cartesia** | Low | High | Balanced performance |
 | **Sarvam** | Low | High | Telugu native voice |
 
