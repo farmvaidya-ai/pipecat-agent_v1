@@ -51,7 +51,7 @@ from pipecat.runner.types import RunnerArguments
 from pipecat.runner.utils import create_transport
 from pipecat.services.cartesia.tts import CartesiaTTSService
 from pipecat.services.elevenlabs.tts import ElevenLabsTTSService
-from murf_tts_service import MurfTTSService  # Custom Murf integration
+from pipecat_murf_tts import MurfTTSService  # Official Murf integration
 from pipecat.services.soniox.stt import SonioxSTTService
 from pipecat.services.deepgram.stt import DeepgramSTTService
 from pipecat.services.sarvam.stt import SarvamSTTService
@@ -75,6 +75,7 @@ async def run_bot(transport: BaseTransport, runner_args: RunnerArguments):
         stt = SonioxSTTService(
             api_key=os.getenv("SONIOX_API_KEY"),
             model=os.getenv("SONIOX_MODEL", "stt-rt-v3")
+            # language_hints=["te", "en", "hi"]
         )
     elif stt_provider == "deepgram":
         stt = DeepgramSTTService(
@@ -83,7 +84,7 @@ async def run_bot(transport: BaseTransport, runner_args: RunnerArguments):
     elif stt_provider == "sarvam":
         stt = SarvamSTTService(
             api_key=os.getenv("SARVAM_API_KEY"),
-            language_code="te-IN"  # Telugu
+            # language_code="te-IN"  # Telugu
         )
     else:
         raise ValueError(f"Unknown STT provider: {stt_provider}")
@@ -98,12 +99,14 @@ async def run_bot(transport: BaseTransport, runner_args: RunnerArguments):
         
         tts = MurfTTSService(
             api_key=os.getenv("MURF_API_KEY"),
-            voice_id=os.getenv("MURF_VOICE_ID", "Aarav"),  # Telugu voice
-            style=os.getenv("MURF_STYLE", "Conversational"),
-            model=os.getenv("MURF_MODEL", "FALCON"),  # Ultra-low latency
-            region=os.getenv("MURF_REGION", "in"),  # India region
-            sample_rate=16000,
-            aiohttp_session=session
+            params=MurfTTSService.InputParams(
+                voice_id=os.getenv("MURF_VOICE_ID", "en-IN-ravi"),
+                style=os.getenv("MURF_STYLE", "Conversational"),
+                model=os.getenv("MURF_MODEL", "FALCON"),
+                sample_rate=16000,
+                format="PCM",
+                channel_type="MONO"
+            )
         )
     elif tts_provider == "elevenlabs":
         tts = ElevenLabsTTSService(
@@ -119,12 +122,15 @@ async def run_bot(transport: BaseTransport, runner_args: RunnerArguments):
     elif tts_provider == "sarvam":
         tts = SarvamTTSService(
             api_key=os.getenv("SARVAM_API_KEY"),
-            model="bulbul:v1"  # Sarvam TTS model
+            voice_id="anushka",
+            model="bulbul:v2",  # Sarvam TTS model
         )
     else:
         raise ValueError(f"Unknown TTS provider: {tts_provider}")
 
-    llm = OpenAILLMService(api_key=os.getenv("OPENAI_API_KEY"))
+    llm = OpenAILLMService(api_key=os.getenv("OPENAI_API_KEY"),
+                           stream=True #this will enable the streaming in chunks and reduce the latency
+                           )
 
     # Load knowledge base from PDF/text file
     knowledge_base = ""
@@ -138,36 +144,37 @@ async def run_bot(transport: BaseTransport, runner_args: RunnerArguments):
         logger.warning(f"⚠️  Knowledge file not found: {knowledge_file}")
 
     # Build system prompt with knowledge base
-    system_prompt = """You are a friendly AI assistant. You must ALWAYS respond in Telugu language only. Never use English or any other language in your responses.
+    system_prompt = """You are a friendly, reliable AI assistant designed for voice-based conversations.
+        IMPORTANT:
+        - Answer questions ONLY based on the following knowledge base document.
+        - Use previous user messages in this conversation to understand context, intent, and continuity.
+        - Do NOT introduce information that is not present in the knowledge base.
 
-IMPORTANT:
-- Answer questions ONLY based on the following knowledge base document.
-- Use previous user messages in this conversation to understand context, intent, and continuity.
-- Do NOT introduce information that is not present in the knowledge base.
+        Conversational Memory & Context:
+        - Treat this as an ongoing conversation, not a single question
+        - Remember and use past user messages to understand what the user is referring to
+        - If the user asks a follow-up question, connect it to previous questions naturally
+        - Do NOT ask the user to repeat information already provided earlier
 
-Conversational Memory & Context:
-- Treat this as an ongoing conversation, not a single question
-- Remember and use past user messages to understand what the user is referring to
-- If the user asks a follow-up question, connect it to previous questions naturally
-- Do NOT ask the user to repeat information already provided earlier
+        Clarification Behavior:
+        - If the user's question is incomplete, vague, or depends on missing details, politely ask a follow-up question
+        - Ask only what is necessary to continue the conversation
+        - Do not guess or hallucinate missing information
 
-Clarification Behavior:
-- If the user's question is incomplete, vague, or depends on missing details, politely ask a follow-up question in Telugu
-- Ask only what is necessary to continue the conversation
-- Do not guess or hallucinate missing information
-
-Knowledge Base:
-{knowledge_base}
-
-Response Rules:
-- Always respond in Telugu only
-- Be conversational, polite, and helpful
-- Answer strictly from the knowledge base
-- If the information is not found in the document, clearly say you do not have that information (in Telugu)
-- If clarification is required, ask a question instead of answering
-- If the knowledge base contains non-Telugu words or phrases, rewrite them in Telugu without changing the meaning
-""".format(knowledge_base=knowledge_base)
-
+        Response Rules:
+        - You MUST respond in the SAME LANGUAGE that the user speaks
+        - Always match the user's language automatically
+        - Return the answer in plain text only.
+        - Do not use markdown, bold text, italics, bullet points, headings, or emojis.
+        - Use simple sentences and paragraphs.
+        - Be conversational, polite, and helpful
+        - Answer strictly from the knowledge base
+        - If the information is not found in the document, clearly say you do not have that information
+        - If clarification is required, ask a question instead of answering
+        
+        KNOWLEDGE BASE:
+        {knowledge_base}
+        """.format(knowledge_base=knowledge_base)
 
     messages = [
         {

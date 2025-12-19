@@ -8,6 +8,7 @@ dependencies = [
     "pipecat-ai-cli",
     "pypdf2>=3.0.0",
     "pydub>=0.25.1",
+    "pipecat-murf-tts>=0.1.2",
 ]
 
 [dependency-groups]

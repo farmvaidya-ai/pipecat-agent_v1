@@ -1,30 +1,4 @@
-```Biofactor – Comprehensive Bio-Fertilizer Information November 3, 2025 Contents 1 Introduction 3 
-2 FAQ & Answers on Bio-Fertilizers 3 3 Product Information 4 3.1 Aadhaar Gold & INM Chakra . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . 4 3.1.1 Aadhaar Gold (Carrier Consortium Granular 
-Biofertilizer) . . . . . . . . . 4 3.1.2 INM Chakra . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . 8 3.2 GVAMSPF (Vesicular Arbuscular Mycorrhiza) . . . . . . . . . . . . . . . . 
-. . . 8 3.3 N-Factor & P-Factor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-9 3.3.1 N-Factor – Nitrogen Fixing Bacteria . . . . . . . . . . . . . . . . . . . . . 9 3.3.2 
-P-Factor – Phosphorus Solubilizing Bacteria . . . . . . . . . . . . . . . . . 9 3.4 K-FACTOR . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10 3.5 ZN-FACTOR . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 3.6 Bio Fertilize . . . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11 3.7 BIO TRIPLE ACTION PROGRAM 
-. . . . . . . . . . . . . . . . . . . . . . . . . 12 3.8 BIO DOUBLE ACTION PROGRAM . . . . . . . . 
-. . . . . . . . . . . . . . . . 12 3.9 Biopotash . . . . . . . . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . 13 3.10 BIOFACTOR Bio Fertilizer . . . . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . 13 3.10.1 PROCEED – Biotic & Abiotic Stress Relieve . . . . . . . . . . . . 
-. . . . 13 3.10.2 PRITHVI – Controls Sucking Pest . . . . . . . . . . . . . . . . . . . . . . 14 
-3.10.3 PROMOTE . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14 3.10.4 
-SUMCA – Bio Enriched Organic Manure . . . . . . . . . . . . . . . . . . 14 4 Organic fertilizers : 
-15 4.1 Poshak Level-1 (Liquid Fermented Organic Fertilizer) . . . . . . . . . . . . . . . 16 5 
-Biofactor’s chemical fertilizers: 19 5.0.1 CHELATED ZINC AS ZINC GLYCINE (LIQUID) . . . . . . . . . 
-. . . . 20 5.0.2 CHELATED BORON AS BORON GLYCINE (LIQUID) . . . . . . . . . 21 5.0.3 Ferron . . . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21 5.0.4 MAGNESIUM HYDROXIDE 
-AND ZINC PHOSPHATE . . . . . . . . . 22 5.0.5 TRuMiN – MANGANESE CARBONATE SUSPENSION CONCENTRATE 
-22 5.0.6 COPSE – 24% Copper Sulphate . . . . . . . . . . . . . . . . . . . . . . . 23 5.0.7 
-BSL4Agri – A Novel Product for Viral Diseases . . . . . . . . . . . . . . . 23 5.1 What does that 
-mean? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 5.2 What is the use? . . 
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24 1
+```Biofactor – Comprehensive Bio-Fertilizer Information 
 
 5.3 NUTRI6 / Formula 6 – Liquid Micronutrient Blends . . . . . . . . . . . . . . . . 24 5.4 FLOWMIN 
 – Specially Designed for Drip Irrigation . . . . . . . . . . . . . . . . 25 5.4.1 Sampoorna – 
@@ -642,56 +616,3 @@ targeting sucking pests Benefits: •Effective pest control •Promotes balanced
 tolerance •Safe for beneficial insects & pollinators 31
 
 Dosage & Application:5 ml DFNDR / 1 L water 32
-### Add More Languages
-Modify the system prompt to support multiple languages or remove the Telugu-only restriction.
-## 📂 Project Structure
-``` pipecat-quickstart/ ├── bot.py # Main bot application ├── murf_tts_service.py # Custom Murf TTS 
-integration ├── resource_document.txt # Knowledge base (bio-fertilizer info) ├── .env # Environment 
-configuration ├── env.example # Example environment file ├── pyproject.toml # Python dependencies 
-├── Dockerfile # Docker configuration └── README.md # This file ```
-## 🐛 Troubleshooting
-### Bot shows "Connecting" but never connects
-- Check browser permissions for microphone - Try Chrome/Edge (best WebRTC support) - Check browser 
-console (F12) for errors
-### Cartesia HTTP 402 Error
-- API key has no credits - Switch to another TTS provider: ```bash TTS_PROVIDER=elevenlabs # or 
-  murf ```
-### Missing ffmpeg Warning
-```bash
-# Ubuntu/Debian
-sudo apt install ffmpeg
-# macOS
-brew install ffmpeg ```
-### Python dotenv parse error (line 66)
-- Remove or comment malformed lines in `.env` - Ensure all lines follow `KEY=value` format
-### STT/TTS Not Working
-- Verify API keys are correct - Check API key has credits/quota - Ensure provider is spelled 
-correctly in `.env`
-## ☁️ Deploy to Production
-### Deploy to Pipecat Cloud
-1. **Install Pipecat CLI:** ```bash uv tool install pipecat-ai-cli ``` 2. **Login:** ```bash 
-pipecat cloud auth login ``` 3. **Upload Secrets:** ```bash pipecat cloud secrets set 
-quickstart-secrets --file .env ``` 4. **Build & Deploy:** ```bash pipecat cloud docker build-push 
-pipecat cloud deploy ``` 5. **Access:** Visit [Pipecat Cloud Dashboard](https://pipecat.daily.co/)
-### Deploy to Custom Server
-1. **Build Docker image:** ```bash docker build -t voice-ai-bot . ``` 2. **Run container:** ```bash 
-docker run -p 7860:7860 --env-file .env voice-ai-bot ```
-## 📊 Performance Tips
-- **Low latency:** Use Murf or ElevenLabs TTS with Soniox STT - **Best accuracy:** Use Deepgram STT 
-- **Telugu optimization:** Use Sarvam for both STT/TTS - **Cost optimization:** Use Soniox STT with 
-Cartesia TTS
-## 🔐 Security Notes
-- Never commit `.env` file to git - Rotate API keys regularly - Use environment variables in 
-production - Limit API key permissions when possible
-## 📖 Additional Resources
-- [Pipecat Documentation](https://docs.pipecat.ai/) - [Pipecat Discord](https://discord.gg/pipecat) 
-- [VS Code Copilot Instructions](.github/copilot-instructions.md)
-## 📝 License
-See LICENSE file for details.
-## 🤝 Contributing
-Contributions welcome! Please open an issue or PR. --- **Need Help?** Check troubleshooting section 
-or join [Pipecat Discord](https://discord.gg/pipecat). EOF echo "✅ Updated README.md"
-cd /home/gunjesh/pipecat-quickstart && wc -l README.md && echo "" && echo "✅ README.md updated successfully!" && echo "" && echo "Preview:" && head -50 README.md
-cd /home/gunjesh/pipecat-quickstart && ls -lh README.md && echo "" && cat README.md | head -80
-cd /home/gunjesh/pipecat-quickstart && [ -f README.md ] && echo "✅ README.md exists" && wc -l README.md || echo "❌ README.md not found"
-
