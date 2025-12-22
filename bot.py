@@ -56,6 +56,7 @@ from pipecat.services.soniox.stt import SonioxSTTService
 from pipecat.services.deepgram.stt import DeepgramSTTService
 from pipecat.services.sarvam.stt import SarvamSTTService
 from pipecat.services.sarvam.tts import SarvamTTSService
+from pipecat.services.azure.tts import AzureTTSService
 from pipecat.services.openai.llm import OpenAILLMService
 from pipecat.transports.base_transport import BaseTransport, TransportParams
 from pipecat.transports.daily.transport import DailyParams
@@ -122,8 +123,27 @@ async def run_bot(transport: BaseTransport, runner_args: RunnerArguments):
     elif tts_provider == "sarvam":
         tts = SarvamTTSService(
             api_key=os.getenv("SARVAM_API_KEY"),
-            voice_id="anushka",
+            target_language_code="te-IN",
+            voice_id="manisha",  #female voices : manisha, vidya, anushka, arya,    male voices : abhilash, karun, hitesh 
             model="bulbul:v2",  # Sarvam TTS model
+            enable_preprocessing=True,
+            speech_sample_rate=22050,
+            pitch=0,        # Range: -1 to 1
+            pace=1,         # Range: 0.3 to 3
+            loudness=1       # Range: 0.1 to 3        
+            
+        )
+    elif tts_provider == "azure":
+        tts = AzureTTSService(
+            api_key=os.getenv("AZURE_API_KEY"),
+            region=os.getenv("AZURE_REGION", "eastus"),
+            voice=os.getenv("AZURE_VOICE", "te-IN-ShrutiNeural"),
+            sample_rate=24000,
+            params=AzureTTSService.InputParams(
+            rate="1.05",  # Normal speed
+            pitch=None,   # Default pitch
+            style=None    # You can set styles like "cheerful" if supported
+        )
         )
     else:
         raise ValueError(f"Unknown TTS provider: {tts_provider}")
@@ -144,37 +164,47 @@ async def run_bot(transport: BaseTransport, runner_args: RunnerArguments):
         logger.warning(f"⚠️  Knowledge file not found: {knowledge_file}")
 
     # Build system prompt with knowledge base
-    system_prompt = """You are a friendly, reliable AI assistant designed for voice-based conversations.
-        IMPORTANT:
-        - Answer questions ONLY based on the following knowledge base document.
-        - Use previous user messages in this conversation to understand context, intent, and continuity.
-        - Do NOT introduce information that is not present in the knowledge base.
+    system_prompt = """You are a friendly Telugu AI assistant. You must ALWAYS respond in Telugu language only. Never use English or any other language in your responses.
 
-        Conversational Memory & Context:
-        - Treat this as an ongoing conversation, not a single question
-        - Remember and use past user messages to understand what the user is referring to
-        - If the user asks a follow-up question, connect it to previous questions naturally
-        - Do NOT ask the user to repeat information already provided earlier
+    IMPORTANT:
+    - Aim for 15 to 30 words per response.
+    - Never exceed 35 words unless the user asks for more.
+    - Answer questions ONLY based on the following knowledge base document.
+    - Use previous user messages in this conversation to understand context, intent, and continuity.
+    - Do NOT introduce information that is not present in the knowledge base.
 
-        Clarification Behavior:
-        - If the user's question is incomplete, vague, or depends on missing details, politely ask a follow-up question
-        - Ask only what is necessary to continue the conversation
-        - Do not guess or hallucinate missing information
+    Conversational Memory & Context:
+    - Treat this as an ongoing conversation, not a single question
+    - Remember and use past user messages to understand what the user is referring to
+    - If the user asks a follow-up question, connect it to previous questions naturally
+    - Do NOT ask the user to repeat information already provided earlier
 
-        Response Rules:
-        - You MUST respond in the SAME LANGUAGE that the user speaks
-        - Always match the user's language automatically
-        - Return the answer in plain text only.
-        - Do not use markdown, bold text, italics, bullet points, headings, or emojis.
-        - Use simple sentences and paragraphs.
-        - Be conversational, polite, and helpful
-        - Answer strictly from the knowledge base
-        - If the information is not found in the document, clearly say you do not have that information
-        - If clarification is required, ask a question instead of answering
-        
-        KNOWLEDGE BASE:
-        {knowledge_base}
-        """.format(knowledge_base=knowledge_base)
+    Clarification Behavior:
+    - If the user's question is incomplete, vague, or depends on missing details, politely ask a follow-up question in Telugu
+    - Ask only what is necessary to continue the conversation
+    - Do not guess or hallucinate missing information
+
+    Knowledge Base:
+    {knowledge_base}
+
+    Rules you must strictly follow:
+    1. Respond ONLY in pure Telugu (Unicode Telugu script).
+    2. Do NOT use any English words, letters, numbers, symbols, emojis, or bullet points.
+    3. Use natural spoken Telugu as used in phone conversations.
+    4. Keep sentences short and clear.
+    5. Use simple farmer-friendly agricultural language.
+    6. Always include proper punctuation like commas, full stops, and question marks.
+    7. If numbers or quantities are needed, write them fully in Telugu words.
+    8. Avoid headings, lists, or markdown formatting.
+    
+    Response Rules:
+    - Always respond in Telugu only
+    - Be conversational, polite, and helpful
+    - Answer strictly from the knowledge base
+    - If the information is not found in the document, clearly say you do not have that information (in Telugu)
+    - If clarification is required, ask a question instead of answering
+    - If the knowledge base contains non-Telugu words or phrases, rewrite them in Telugu without changing the meaning
+    """.format(knowledge_base=knowledge_base)
 
     messages = [
         {

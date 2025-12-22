@@ -1,11 +1,22 @@
-agent_name = "quickstart"
-image = "your_username/quickstart:0.1"
-secret_set = "quickstart-secrets"
-agent_profile = "agent-1x"
+agent_name = "telugu-agri-bot"
+image = "your_username/telugu-agri-bot:0.1"
+secret_set = "telugu-agri-bot-secrets"
+agent_profile = "agent-2x"
 
 # RECOMMENDED: Set an image pull secret:
 # https://docs.pipecat.ai/deployment/pipecat-cloud/fundamentals/secrets#image-pull-secrets
 # image_credentials = "your_image_pull_secret"
 
 [scaling]
-	min_agents = 1
+        min_agents = 1
+        max_agents = 5
+
+# Required secrets (set via: pipecat secrets set)
+# OPENAI_API_KEY
+# SARVAM_API_KEY
+# AZURE_API_KEY
+# AZURE_REGION
+# AZURE_VOICE
+# STT_PROVIDER
+# TTS_PROVIDER
+# KNOWLEDGE_FILE

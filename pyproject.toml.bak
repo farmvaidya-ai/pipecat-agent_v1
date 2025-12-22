@@ -1,10 +1,10 @@
 [project]
-name = "telugu-agri-bot"
+name = "pipecat-quickstart"
 version = "0.1.0"
-description = "Telugu voice AI assistant for agriculture and bio-fertilizers"
+description = "Quickstart example for building voice AI bots with Pipecat"
 requires-python = ">=3.10"
 dependencies = [
-    "pipecat-ai[webrtc,daily,silero,soniox,deepgram,sarvam,openai,cartesia,elevenlabs,azure,local-smart-turn-v3,runner]",
+    "pipecat-ai[webrtc,daily,silero,soniox,deepgram,sarvam,openai,cartesia,elevenlabs,local-smart-turn-v3,runner]",
     "pipecat-ai-cli",
     "pypdf2>=3.0.0",
     "pydub>=0.25.1",
