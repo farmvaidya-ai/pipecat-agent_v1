@@ -37,27 +37,36 @@ cp env.example .env
 Edit `.env` with your API keys:
 
 ```env
-# Required
+# AI Service API Keys
 OPENAI_API_KEY=your_openai_api_key
 
-# STT Provider Keys (choose one)
+# STT Service API Keys
 SONIOX_API_KEY=your_soniox_api_key
+SONIOX_MODEL=stt-rt-v3
 DEEPGRAM_API_KEY=your_deepgram_api_key
 SARVAM_API_KEY=your_sarvam_api_key
 
-# TTS Provider Keys (choose one)
-MURF_API_KEY=your_murf_api_key
-ELEVEN_LABS_API_KEY=your_elevenlabs_api_key
+# TTS Service API Keys
 CARTESIA_API_KEY=your_cartesia_api_key
+ELEVEN_LABS_API_KEY=your_elevenlabs_api_key
+MURF_API_KEY=your_murf_api_key_here
 
-# Provider Selection
-STT_PROVIDER=soniox        # Options: soniox, deepgram, sarvam
-TTS_PROVIDER=elevenlabs    # Options: murf, elevenlabs, cartesia, sarvam
+# Azure TTS Configuration
+AZURE_API_KEY=your_azure_speech_key
+AZURE_REGION=centralindia
+AZURE_VOICE=te-IN-ShrutiNeural
 
-# Knowledge Base
+# Service Provider Configuration
+# STT Options: soniox, deepgram, sarvam
+STT_PROVIDER=sarvam
+
+# TTS Options: murf, elevenlabs, cartesia, sarvam, azure
+TTS_PROVIDER=azure
+
+# Knowledge Base File
 KNOWLEDGE_FILE=resource_document.txt
 
-# Optional: Daily.co for cloud deployment
+# Optional: Connect via Daily WebRTC locally
 DAILY_API_KEY=your_daily_api_key
 ```
 
@@ -88,19 +97,14 @@ STT_PROVIDER=deepgram
 | Provider | Latency | Quality | Best For |
 |----------|---------|---------|----------|
 | **Murf** | Ultra-low | High | Real-time, natural voice |
-| **Cartesia** | Low | High | Balanced performance |
+| **Azure** | Low | High | Balanced performance |
 | **Sarvam** | Low | High | Telugu native voice |
 
 **Switch TTS Provider:**
 ```bash
 # In .env
-TTS_PROVIDER=murf
+TTS_PROVIDER=Azure
 ```
-
-**Murf Voice Options:**
-- `en-US-ronnie` - Male, supports Telugu (current)
-- `en-US-wayne` - Deep male
-- `en-IN-priya` - Indian female
 
 ## 📚 Knowledge Base
 
@@ -126,40 +130,6 @@ with open('your_document.pdf', 'rb') as file:
 with open('resource_document.txt', 'w', encoding='utf-8') as f:
     f.write('\n\n'.join(text))
 ```
-
-
-Configure Murf settings in `.env`:
-
-
-
-The bot uses a custom Murf TTS service (`murf_tts_service.py`) for streaming audio output.
-**Python Packages:** Ensure `aiohttp` is installed (usually via `uv sync`). If needed: `pip install aiohttp`.
-
-**Runtime Notes:**
-- The service streams audio frames for low-latency TTS.
-- Verify ffmpeg path with `which ffmpeg`.
-- Test API key and voice ID validity.
-
-**Note:** The voice ID `Karan` was invalid; updated to `en-US-ronnie` which supports Telugu.
-
-```bash
-sudo apt install ffmpeg
-pip install pydub
-```
-
-Configure Murf settings in `.env`:
-
-```env
-# Murf TTS Configuration (for Telugu voice)
-MURF_API_KEY=your_murf_api_key
-MURF_VOICE_ID=en-US-ronnie
-MURF_STYLE=Conversational
-MURF_MODEL=FALCON
-MURF_REGION=in
-```
-
-The bot uses a custom Murf TTS service (`murf_tts_service.py`) for streaming audio output.
-**Python Packages:** Ensure `aiohttp` is installed (usually via `uv sync`). If needed: `pip install aiohttp`.
 
 **Runtime Notes:**
 - The service streams audio frames for low-latency TTS.
