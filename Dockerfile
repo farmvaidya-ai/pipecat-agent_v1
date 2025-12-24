@@ -1,33 +1,17 @@
 FROM dailyco/pipecat-base:latest
 
-# Enable bytecode compilation for performance
+# Enable bytecode compilation
 ENV UV_COMPILE_BYTECODE=1
+
+# Copy from the cache instead of linking since it's a mounted volume
 ENV UV_LINK_MODE=copy
 
-WORKDIR /app
-
-# Install system dependencies for audio processing
-RUN apt-get update && apt-get install -y \
-    ffmpeg \
-    && rm -rf /var/lib/apt/lists/*
-
-# Copy dependency files
-COPY uv.lock pyproject.toml ./
-
-# Install dependencies with cache mount
+# Install the project's dependencies using the lockfile and settings
 RUN --mount=type=cache,target=/root/.cache/uv \
+    --mount=type=bind,source=uv.lock,target=uv.lock \
+    --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
     uv sync --locked --no-install-project --no-dev
 
-# Copy application code
-COPY bot.py ./
-COPY resource_document.txt ./
-
-# Expose port for WebRTC
-EXPOSE 7860
-
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:7860/health || exit 1
-
-# Run the bot
-CMD ["uv", "run", "bot.py"]
+# Copy the application code
+COPY ./bot.py bot.py
+COPY ./resource_document.txt resource_document.txt

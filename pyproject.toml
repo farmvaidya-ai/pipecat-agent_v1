@@ -1,5 +1,5 @@
 [project]
-name = "telugu-agri-bot"
+name = "pipecat-agent_v1"
 version = "0.1.0"
 description = "Telugu voice AI assistant for agriculture and bio-fertilizers"
 requires-python = ">=3.10"
